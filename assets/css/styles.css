@@ -1,0 +1,184 @@
+:root {
+  --memo-map-bg: #E5E8FF;
+  --memo-map-txt: #1027FC;
+  --rent-easy-bg: #F5DBD3;
+  --bridal-shower-bg: #BFD3BE;
+  --cmu-sio-bg:#F5F4F4; /*#B8CAC4;*/
+  --cmu-sio-txt: #A80000;
+  --asian-designers-bg: #EFF0F2;
+  --pitt-zoo-bg: #C8DEF4;
+  --accent-bg: #40873E;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.nav-active {
+  color: var(--accent-bg)
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+.heading {
+  font-size: 18px;
+}
+
+li {
+  line-height: 2em;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+.green {
+  color: var(--accent-color);
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  margin-bottom: 4px;
+  font-size: 24px;
+}
+
+.card-body {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+}
+
+.projects a:hover {
+  text-decoration: none;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.card-tag {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #525252;
+}
+
+.drop-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.memo-map-bg {
+  background: var(--memo-map-bg);
+}
+
+.memo-map-txt {
+  color: var(--memo-map-txt);
+}
+
+.rent-easy-bg {
+  background-color: var(--rent-easy-bg);
+}
+
+.bridal-shower-bg {
+  background-color: var(--bridal-shower-bg);
+}
+
+.cmu-sio-bg {
+  background-color: var(--cmu-sio-bg);
+}
+
+.cmu-sio-txt {
+  color: var(--cmu-sio-txt);
+}
+
+.asian-designers-bg {
+  background-color: var(--asian-designers-bg);
+}
+
+.pitt-zoo-bg {
+  background-color: var(--pitt-zoo-bg);
+}
+
+
+.process-scroll {
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.process-scroll h5 {
+  font-size: 18px;
+  margin: 30px 0px 0px 0px;
+  font-weight: 600;
+}
+
+.memo-map-scroll p {
+  margin: 30px 0px 10px 10px;
+}
+
+.process-scroll ul {
+  margin-bottom: 30px;
+}
+
+.process-scroll ol li {
+  margin-top: 10px;
+}
+
+
+.process-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* path {
+  margin-bottom: 1vh;
+} */
+
+/* i {
+  color: val(--accent-color);
+  font-size: 5vh;
+} */
+
+.memo-map-scroll img {
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.active {
+  font-size: 100px;
+}
+/* 
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 6s linear normal infinite;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+} */

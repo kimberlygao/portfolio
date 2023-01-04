@@ -1,0 +1,68 @@
+[
+  {
+    "name": "MemoMap",
+    "description": "a digital map diary",
+    "tags": "iOS dev + ui/ux design",
+    "url": "memo-map.html",
+    "img": "assets/img/memo-map/card.svg",
+    "color": "memo-map"
+  },
+  {
+    "name": "CMU SIO",
+    "description": "course catalog and registration",
+    "tags": "web dev + ui/ux design",
+    "url": "cmu-sio.html",
+    "img": "assets/img/cmu-sio/card.svg",
+    "color": "cmu-sio"
+  },
+  {
+    "name": "RentEasy",
+    "description": "property rental platform",
+    "tags": "ui/ux design",
+    "url": "rent-easy.html",
+    "img": "assets/img/rent-easy.svg",
+    "color": "rent-easy"
+  },
+  {
+    "name": "Lisa's Bridal Shower",
+    "description": "digital invite and rsvp",
+    "tags": "web dev + ui/ux design",
+    "url": "bridal-invite.html",
+    "img": "assets/img/bridal-invite.svg",
+    "color": "bridal-shower"
+  },
+  {
+    "name": "Asian Designers",
+    "description": "interactive gallery display",
+    "tags": "info/grid design",
+    "url": "asian-designers.html",
+    "img": "assets/img/asian-designers.svg",
+    "color": "asian-designers"
+  },
+  {
+    "name": "Pittsburgh Zoo",
+    "description": "in park screen display",
+    "tags": "info design",
+    "url": "pitt-zoo.html",
+    "img": "assets/img/pitt-zoo.svg",
+    "color": "pitt-zoo"
+  },
+  {
+    "name": "Duquesne Incline",
+    "description": "tourist attraction website",
+    "tags": "web dev + ui/ux design",
+    "url": "duquesne-incline.html",
+    "img": "assets/img/duquesne-incline.png",
+    "color": "memo-map"
+  },
+  {
+    "name": "Traview",
+    "description": "user research and evaluation project",
+    "tags": ["research & evaluation"],
+    "tech": ["figma", "research methods"],
+    "url": "https://www.figma.com/proto/PYqnOj2mrYxEr2lmmWbv8z/Poster?node-id=8%3A2&scaling=min-zoom&page-id=0%3A1",
+    "date": "may 2022",
+    "img": "assets/img/traview.png",
+    "color": "memo-map"
+  }
+]

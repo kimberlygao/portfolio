@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Kimberly Gao</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link href="assets/css/styles.css" id="stylesheet" rel="stylesheet" type="text/css" />
+
+  <!-- javascript libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-path.v1.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-lg heading">
+        <div class="container-fluid p-4">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg"></a>
+          <ul class="navbar-nav" id="navbarNav">
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assets/Kimberly_Gao_Resume2022.pdf" target="_blank"
+                rel="noopener noreferrer">resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="row" style="height: 10vh"></div>
+
+    <div class="container-fluid">
+      <div class="row equal">
+        <div class="col-10 col-lg-5 offset-1 d-flex flex-column justify-content-between memo-map-bg p-4 drop-shadow">
+            <div class="container pt-4 bold">
+              <h1 class="memo-map-txt bold">MemoMap</h1>
+              <p class="subtitle">a digital map diary app</p>
+              <p class="heading">ui/ux design + iOS development</p>
+            </div>
+            <div class="container pb-4">
+              <p>In the fall of 2022, I took Mobile Application Development, a class where students form teams of 3 and work in 6 sprints over the semester developing an app together. My team created <span class="bold">MemoMap, an app for people to keep in touch with friends by sharing travel and food photos</span> like a digital map diary.</p>
+            </div>
+            <div class="container">
+              <p><span class="bold">duration</span> –– September 2022 to December 2022</p>
+              <p><span class="bold">collaborators</span> –– Chloe Chan, Fiona Chiu</p>
+              <p><span class="bold">tools</span> –– Swift/SwiftUI, Firebase, Figma, Github, XCode</p>
+              <p><span class="bold">methods</span> –– Agile, Full-Stack, User Testing, Wireframing, Prototyping</p>
+            </div>
+        </div>
+        <div class="col-10 offset-1 offset-lg-0 col-lg-5 p-4">
+          <img src="assets/img/memo-map/cover.svg" width="100%">
+        </div>
+      </div>
+
+      <div class="row" style="height: 20vh"></div>
+
+      <div class="row">
+        <div class="col-10 offset-1">
+          <h3 class="memo-map-txt bold">Final Deliverables</h3>
+          <div class="row m-4">
+            <div class="col-12 col-lg-2 offset-lg-1">
+              <h4 class="bold">Demo</h4>
+            </div>
+            <div class="col-12 col-lg-8 text-center">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1DJQCkg8undj-PUtU4_YZo9t9K0eydnnY/preview" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="height: 5vh"></div>
+          <div class="row m-4">
+            <div class="col-12 col-lg-2 offset-lg-1">
+              <h4 class="bold">Poster</h4>
+            </div>
+            <div class="col-12 col-lg-8 text-center">
+              <img class="p-4 memo-map-bg drop-shadow"src="assets/img/memo-map/poster.png" width="100%">
+            </div>
+          </div>
+          <div class="row" style="height: 5vh"></div>
+          <div class="row m-4">
+            <div class="col-12 col-lg-2 offset-lg-1">
+              <h4 class="bold">Promo Video</h4>
+            </div>
+            <div class="col-12 col-lg-8 text-center">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1Yk0L_gqEvQ55IU19aU7uRvbj5Zeddc_K/preview" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row" style="height: 20vh"></div>
+
+      <div class="row">
+        <div class="col-10 col-lg-2 offset-1">
+          <h2 class="memo-map-txt bold">Process</h2>
+          <div id="memo-map-process" class="d-flex flex-column heading ">
+            <a class="scroll-item" href="#list-item-1">1 – Ideation</a>
+            <a class="scroll-item" href="#list-item-2">2 – User Experience</a>
+            <a class="scroll-item" href="#list-item-3">3 – API & Prototyping</a>
+            <a class="scroll-item" href="#list-item-4">4 – Version 1</a>
+            <a class="scroll-item" href="#list-item-5">5 – User Testing</a>
+            <a class="scroll-item" href="#list-item-6">6 – Version 2</a>
+          </div>
+        </div>
+       
+        <div data-bs-spy="scroll" data-bs-target="#memo-map-process" data-bs-offset="0" data-bs-smooth-scroll="true" class="memo-map-scroll process-scroll col-10 col-lg-8 offset-1 offset-lg-0 memo-map-bg drop-shadow p-4" tabindex="0">
+          <div id="list-item-1">
+            <div class="row" style="height: 3vh"></div>
+            <h4 class="memo-map-txt bold">Sprint 1 –– Ideation</h4>
+            <p>Tasked with “creating a great idea for a mobile application", we focused on utilizing the mobile mindset and leveraging the strengths of the mobile platform. Drawing from our own interests and passions, we came up with a few different ideas each and ultimately landed on an <span class="font-weight-bold memo-map-txt">idea for a “scratch” map with photos and friends.</span></p>
+            <p>We conducted an initial <span class="bold memo-map-txt">user research <a class="underline memo-map-txt" target="_blank" rel="noopener noreferrer" href="https://forms.gle/FtcG95tyS6G8Bp8k8">survey</a> on 17 young adults</span> where we gained the following insights:</p>
+            <ul>
+              <li>12 of 17 trust friends and family most when it comes to recommendations</li>
+              <li>15 of 17 use their camera roll to keep track of places visited</li>
+              <li>11 of 17 share travel content the most on social media</li>
+              <li>13 of 17 use BeReal and like the app for the following reasons</li>
+              <ul>
+                <li>"fun way to interact and keep in touch with friends everyday"</li>
+                <li>"app creativity"</li>
+                <li>"low effort and low commitment"</li>
+                <li>"ability to look back on past BeReals as a daily journal</li>
+              </ul>
+            </ul>
+            <p>Based on additional research and our user survey, we identified the following <span class="bold memo-map-txt">pain points to address:</span></p>
+            <ul>
+              <li>craving for human connection and seeing what your friends are up to</li>
+              <li>overthinking social media posts and forgetting to live in the moments</li>
+              <li>effort required when documenting travel experiences</li>
+              <li>overloaded recommendations when looking for places to visit</li>
+            </ul>
+            <p>From there, we defined <span class="bold memo-map-txt">3 main features</span> as the basis for our app:</p>
+            <ol>
+              <li>adding a photo/memory/pin</li>
+              <li>viewing you and your friends map</li>
+              <li>answering the daily prompt and viewing friends' answers</li>
+            </ol>
+            <div class="row" style="height: 5vh"></div>
+          </div>
+          <div id="list-item-2">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="memo-map-txt bold">Sprint 2 –– User Experience</h4>
+            <p>We first drafted <span class="bold memo-map-txt">low-fi wireframes</span> in which I focused on User Flow 2, searching and viewing your friends map. While designing, we faced many design possibilities in which we would quickly create multiple versions and leave the decisions to user testing.</p>
+            
+            <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5ck4N9F0fhdWpFn8JOp0OY%2Fmobile-app-dev%3Fnode-id%3D318%253A6137%26t%3DPY5ceQ7T9DKANFTU-1" allowfullscreen></iframe> -->
+            <h5>User Flow 1: Adding a photo</h5>
+            <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FzjYSYTKtrlL6hVziERA005%2Fportfolio%3Fnode-id%3D597%253A3541%26t%3DkB20kNXuSoBGHwCw-1" allowfullscreen></iframe> -->
+            <p>Option A: Camera Icon</p>
+            <img src="assets/img/memo-map/lofi-1.svg" height="340">
+            <p>Option B: Camera Tab</p>
+            <img src="assets/img/memo-map/lofi-2.svg" height="340px">
+
+            <h5>User Flow 2: Searching and viewing you and your friends map</h5>
+            <p>Option A: Toggle Map</p>
+            <img src="assets/img/memo-map/lofi-3.svg" height="660px">
+            <p>Option B: Separate Friends Map</p>
+            <img src="assets/img/memo-map/lofi-4.svg" height="340px">
+
+            <h5>User Flow 3: Answering the daily prompt and viewing friends' answers</h5>
+            <p>Part A: Answering the Prompt</p>
+            <img src="assets/img/memo-map/lofi-5.svg" height="660px">
+            <p>Part B: Viewing Friends Answers</p>
+            <img src="assets/img/memo-map/lofi-6.svg" height="340px">
+
+            <h5>User Testing Insights</h5>
+            <ol>
+              <li>Adding a photo</li>
+              <ul>
+                <li>most users preferred a camera tab for easier access and similarity to other social media apps</li>
+                <li>preferred pressing the shutter button once to take both photos as opposed to twice</li>
+                <li>adjusting a location was intuitive</li>
+              </ul>
+              <li>Searching and viewing you and your friends map</li>
+              <ul>
+                <li>every user preferred toggle while the single icon was confusing to identify the maps</li>
+              </ul>
+              <li>Answering the daily prompt and viewing friends' answers</li>
+              <ul>
+                <li>pop-up felt too similar to Apple's default pop-up buttons for error messages or scams --> turned this into a button</li>
+                <li>left/right recents swiping gesture not intuitive --> decided to switch to grid format</li>
+                <li>too many clicks to answer the prompt --> added available photos on the map when selecting</li>
+                <li>users liked the uniqueness of map view compared to a typical feed view --> decided to keep both as options for the user</li>
+              </ul>
+            </ol>
+
+            <p>Based on our user testing insights shown below, I took lead on working towards <span class="memo-map-txt bold">mid-fi wireframes.</span></p>
+            <h5>User Flow 1: Adding a photo</h5>
+            <img src="assets/img/memo-map/lofi-7.svg" height="300px">
+
+            <h5>User Flow 2: Searching and viewing you and your friends map</h5>
+            <img src="assets/img/memo-map/lofi-8.svg" height="660px">
+
+            <h5>User Flow 3: Answering the daily prompt and viewing friends' answers</h5>
+            <img src="assets/img/memo-map/lofi-9.svg" height="660px">
+
+            <p>Adding color, images, and greater detail, we finalized our <span class="bold memo-map-txt">hi-fi wireframes</span> as such and did a final round of user testing to confirm our design choices.</p>
+            <h5>User Flow 1: Adding a photo</h5>
+            <img src="assets/img/memo-map/hifi-1.png" height="300px">
+
+            <h5>User Flow 2: Searching and viewing you and your friends map</h5>
+            <img src="assets/img/memo-map/hifi-2.png" height="660px">
+
+            <h5>User Flow 3: Answering the daily prompt and viewing friends' answers</h5>
+            <img src="assets/img/memo-map/hifi-3.png" height="660px">
+
+            <div class="row" style="height: 5vh"></div>
+          </div>
+         
+          <div id="list-item-3">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="memo-map-txt bold">Sprint 3 –– API & Prototyping</h4>
+            <p>From our hi-fi wireframes, I created an <span class="memo-map-txt bold">interactive prototype</span> and conducted 2 of 4 user tests. We maintained three user flows from the previous sprint and I also added screens for user profiles and adding friends. We asked participants to think aloud as they navigated the prototype.</p>
+
+            <div class="container d-flex justify-content-center mt-4">
+              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5ck4N9F0fhdWpFn8JOp0OY%2Fmobile-app-dev%3Fpage-id%3D336%253A2415%26node-id%3D336%253A2446%26viewport%3D780%252C308%252C0.14%26scaling%3Dscale-down%26starting-point-node-id%3D336%253A2446" allowfullscreen></iframe>
+            </div>
+            
+            <p>As for our API, we decided to use <span class="memo-map-txt bold">Apple's MapKit</span> for all the map functionalities due to its streamlined integration for XCode (as opposed to Google Maps API). We tested out dropping pins based on user location as well as searching for and displaying nearby locations to ensure we could implement the core functionalities we needed.</p>
+         
+            <p>In order to store data, we designed a <span class="memo-map-txt bold">Firestore NoSQL database structure</span> through data mapping our wireframes and then set up the corresponding database in Firebase.</p>
+            <div class="row" style="height: 5vh"></div>
+          </div>
+          <div id="list-item-4">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="memo-map-txt bold">Sprint 4 –– Version 1 of MemoMap</h4>
+            <p>For our first version, we determined our <span class="memo-map-txt bold">A-level features</span> to develop:</p>
+            <ul>
+              <li>adding a memory to the map with camera</li>
+              <li>viewing memories on the map</li>
+              <li>adding friends</li>
+            </ul>
+
+            <p>While the features sounded simple, they proved to be more complex than we realized. We began to face the most challenges throughout the process. From struggling with XCode setup, lacking Swift knowledge, and manually merging our code despite also using Github, we faced a steep learning curve in the two weeks to develop the first version of MemoMap.</p>
+
+            <p>I started the development process with a dual style camera. This took about 18 hours to get a functioning camera with proper access and threading. Slightly buggy but pretty well functioning, I was able to capture both front and back images successfully.</p>
+            <p>My two team members took on Firebase and MapKit which also came with many difficulties. Custom annotations with MapKit as well as storing images with Firebase remained our largest challenges.</p>
+            <p>After finishing up the camera, I focused on the navigation and structure of our app as a whole, creating different modular front-end pieces and filling in gaps where needed.</p>
+            <p>By the end of this sprint, we built out most of our features with a functioning front-end but no back-end.</p>
+        
+            <div class="row" style="height: 5vh"></div>
+          </div>
+          <div id="list-item-5">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="memo-map-txt bold">Sprint 5 –– User Testing Version 1</h4>
+            <p>We tested our app on 6 target users. Participants were asked to think aloud as they freely navigated through the app. Most our feedback revolved around UI elements in which we hadn't quite matched our design prototype due to time and/or Swift constraints.</p>
+            <p>In general, we found most of our icons were too small and hard to see because the background as a map, is very complex.</p>
+            <p>Some participants found the search bar to be more bothersome than helpful because they weren't able to hit "return" to execute search but had to click on the magnifying glass icon. Participants agreed a more functional search was needed that adhered to the typical memory model in order to be useful.</p>
+            <p>For the camera, all participants wanted the button the be bigger and faster to respond to user interaction. They did enjoy the simlarity to BeReal which made the experience simple and intuitive.</p>
+            <p>Friend requests were intuitive after finding the button for it. It was easy to send/accept/deny friend requests.</p>
+            <p>As for the map, by far the larfest component, we recevied feedback on UI in the size of the search bar, look of the pins, and distracting text on the map. These were key focuses moving forward in working with MapKit constraints to follow our original design.</p>
+
+            <p>With all the valuable feedback, we revised our development plan and made action items to address the issues users faced.</p>
+            <div class="row" style="height: 5vh"></div>
+
+          </div>
+          <div id="list-item-6">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="memo-map-txt bold">Sprint 6 –– Version 2 of MemoMap</h4>
+            <p>In the final phases of development, we faced a lot of stress in the complexity of our app. We spent a LOT of late nights together integrating code, fixing bugs, and struggling with different features. This almost led to us dropping our prompt feature due to time constraints but getting past the learning curve really helped us pick up the pace.</p>
+
+            <p>We were able to build out all of our planned features with a fully functioning front and back end for a successful app. Being able to deploy and use the final app on my phone felt like a great acheivement.</p>
+            <div class="row" style="height: 5vh"></div>
+
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="row" style="height: 20vh"></div>
+
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-5 p-4">
+        <h3 class="memo-map-txt bold mb-4">Reflection</h3>
+        <p class="mb-4">This was by far the biggest, most challenging, but most rewarding project I’ve worked on. From the very beginning, I wanted to create an app I was passionate about and proud of. I’m very grateful to work with my two team members in which our strong collaboration with one another truly made MemoMap successful.</p>
+        <p class="mt-4">Key Takeaways</p>
+        <ul>
+          <li>learning Swift and building an app for the first time</li>
+          <li>the complexity of building a fully functioning app from scratch –– lots of unforseen challenges with development</li>
+          <li>scope creep! our app had too many moving pieces which left us feeling overwhelmed</li>
+          <li>importance of equal effort when working with others!</li>
+        </ul>
+      </div>
+      <div class="col-10 offset-1 offset-lg-0 col-lg-5 text-center d-flex flex-column justify-content-center">
+        <div class="container" width="80%">
+          <img src="assets/img/memo-map/fair.jpeg" width="80%">
+          <p class="m-2">my team with our mentors at the project showcase!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="height: 20vh"></div>
+
+
+    <footer class="container-fluid">
+      <div class="row justify-content-center">
+        <img src="assets/img/kimberly-gao.svg" width="80%">
+      </div>
+      <div class="row text-center">
+        <div class="container mt-4">
+          <i class="bi bi-linkedin m-4"></i>
+          <i class="bi bi-envelope m-4"></i>
+          <i class="bi bi-github m-4"></i>
+        </div>
+      </div>
+    </footer>
+
+    <div class="row" style="height: 10vh"></div>
+  </div>
+
+  
+
+  <script src="assets/js/scroll.js"></script>
+</body>
+
+</html>

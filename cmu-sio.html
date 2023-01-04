@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Kimberly Gao</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link href="assets/css/styles.css" id="stylesheet" rel="stylesheet" type="text/css" />
+
+  <!-- javascript libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-path.v1.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-lg heading">
+        <div class="container-fluid p-4">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg"></a>
+          <ul class="navbar-nav" id="navbarNav">
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assets/Kimberly_Gao_Resume2022.pdf" target="_blank"
+                rel="noopener noreferrer">resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="row" style="height: 8vh"></div>
+
+    <div class="container-fluid">
+      <div class="row equal">
+        <div class="col-10 col-lg-4 offset-1 d-flex flex-column justify-content-between cmu-sio-bg p-4 drop-shadow">
+          <div class="container pt-4 bold">
+            <h1 class="cmu-sio-txt bold">CMU SIO</h1>
+            <p class="subtitle">course catalog and registration</p>
+            <p class="heading">ui/ux design + web development</p>
+          </div>
+          <div class="container pb-4">
+            <p><span class="bold">duration</span> –– February 2022 to March 2022</p>
+            <p><span class="bold">tools</span> –– HTML + CSS + JavaScript + jQuery + Figma + Github + Firebase Hosting
+            </p>
+            <p><span class="bold">methods</span> –– Iterative Design/Development + Rapid Prototyping + Heuristic
+              Evaluation + User Testing</p>
+          </div>
+          <div class="container">
+            <a href="https://cmu-sio.web.app/index.html" target="_blank" rel="noopener noreferrer">
+              <p class="bold cmu-sio-txt">visit my deployed site<i class="bi bi-arrow-up-right-square m-2"></i></p>
+            </a>
+          </div>
+        </div>
+        <div class="col-10 offset-1 offset-lg-0 col-lg-6 d-flex flex-column justify-content-between">
+          <div class="container">
+            <img src="assets/img/cmu-sio/cover.svg" width="100%">
+          </div>
+          <div class="container mt-4">
+            <p>Navigating Carnegie Mellon University’s Student Information Online (SIO) remains a challenge for the
+              student body for scheduling classes, viewing finances, requesting transcripts and many other
+              administrative tasks. The following redesign aims to improve the user experience of Carnegie Mellon’s SIO,
+              specifically for class scheduling. After multiple rounds of prototyping and user testing, the new SIO
+              design centers around being able to easily view and add classes to minimize the user’s time while
+              maximizing functionality.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="height: 20vh"></div>
+
+      <div class="row">
+        <div class="col-10 col-lg-2 offset-1">
+          <h2 class="cmu-sio-txt bold">Process</h2>
+          <div id="cmu-sio-process" class="d-flex flex-column heading bold">
+            <a class="scroll-item" href="#list-item-1">01 Problem</a>
+            <a class="scroll-item" href="#list-item-2">02 Rapid Prototyping</a>
+            <a class="scroll-item" href="#list-item-3">03 Hi-fi Prototype</a>
+            <a class="scroll-item" href="#list-item-4">04 Heuristic Evaluation</a>
+            <a class="scroll-item" href="#list-item-5">05 Development V1</a>
+          </div>
+        </div>
+
+        <div data-bs-spy="scroll" data-bs-target="#cmu-sio-process" data-bs-offset="0" data-bs-smooth-scroll="true"
+          class="process-scroll col-10 col-lg-8 offset-1 offset-lg-0 cmu-sio-bg drop-shadow p-4" tabindex="0">
+          <div id="list-item-1">
+            <div class="row" style="height: 3vh"></div>
+            <h4 class="cmu-sio-txt bold">01 Problem</h4>
+
+            <div class="container">
+              <h5 class="mb-2">Current SIO</h5>
+              <div class="row text-center">
+                <div class="col">
+                  <img class="img-fluid m-1" src="assets/img/cmu-sio/current-1.svg">
+                  <p class="p-0">Plan Schedule</p>
+                </div>
+                <div class="col">
+                  <img class="img-fluid m-1" src="assets/img/cmu-sio/current-2.svg">
+                  <p>Browse Courses</p>
+                </div>
+                <div class="col">
+                  <img class="img-fluid m-1" src="assets/img/cmu-sio/current-3.svg">
+                  <p>View Courses</p>
+                </div>
+              </div>
+              <p class="mt-4">Looking at the current SIO, I observed many issues I wanted to address in my redesign.</p>
+              <p class="m-0">The <span class="bold">main issues</span> included:</p>
+              <ul>
+                <li>cognitive overload across all pages</li>
+                <li>lack of accessibility in color constrast of text</li>
+                <li>cannot browse all courses without filtering by at least one category or search</li>
+              </ul>
+              <p class="m-0">Other issues I observed but did not make a priority to address included:</p>
+              <ul>
+                <li>no differentiation between undergrad and graduate courses</li>
+                <li>waitlisting and course reservation transparency</li>
+                <li>cannot view schedule while browsing courses</li>
+              </ul>
+            </div>
+            <div class="row" style="height: 5vh"></div>
+          </div>
+          <div id="list-item-2">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="cmu-sio-txt bold">02 Rapid Prototyping</h4>
+            <div class="container">
+              <p class="mt-4">I began by creating <span class="bold">3 initial rapid prototypes</span> in 20 minutes on
+                Figma. </p>
+              <h5 class="mb-3 ">P1. Daily Schedule with Sidebar Control</h5>
+              <img class=img-fluid" src="assets/img/cmu-sio/wireframe-1.svg">
+              <h5 class="mb-3 ">P2. List Schedule and Separate Control Page</h5>
+              <img class=img-fluid" src="assets/img/cmu-sio/wireframe-2.svg">
+              <h5 class="mb-3 ">P3. Table Schedule and Tabs for Features</h5>
+              <img class=img-fluid" src="assets/img/cmu-sio/wireframe-2.svg">
+              <p class="mt-4">I conducted a quick <span class="bold">user study</span> on each of these prototypes and
+                received the following feedback:</p>
+              <ul>
+                <li>P1 offers traditional schedule view design pattern which is hard to visualize mentally</li>
+                <li>P2 and P3 require user to remember the schedule plan when searching for a new schedule</li>
+                <li>P3 dropdown filter offers recognition over recall</li>
+                <li>P3 produces cognitive overload with all the description</li>
+              </ul>
+              <p>Overall, the P1 showed better schedule functionality with a simplified sidebar control on the left side
+                and calendar view on the right. P3's dropdown filter eases search and browse functionality for users.
+              </p>
+            </div>
+            <div class="row" style="height: 5vh"></div>
+          </div>
+          <div id="list-item-3">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="cmu-sio-txt bold">03 Hi-fi Prototype</h4>
+            <div class="container">
+              <p class="">I defined a few <span class="bold">design goals</span> which guided my design choices: </p>
+              <ul>
+                <li>fast functionality for busy student life</li>
+                <li>full course catalog with simple browsing</li>
+                <li>quick links to popular resources</li>
+              </ul>
+              <p>Moving forward, I decided to take the best visual and most convenient aspects of the 3 prototypes. I
+                wanted to include more symbols and dropdown menus (instead of input boxes). I altered the button
+                placement for more familiar locations and simplified the search feature with the option for advanced
+                search.</p>
+              <h5>Final Prototype</h5>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
+                  height="450"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNK8jlgTT2LIXSBfpCCnGGa%2FKimberly-Gao-(kwgao)%3Fpage-id%3D86%253A1057%26node-id%3D86%253A2435%26viewport%3D716%252C457%252C0.09%26scaling%3Dscale-down%26starting-point-node-id%3D86%253A2435"
+                  allowfullscreen></iframe>
+              </div>
+              <h5>Site Map</h5>
+              <img class="img-fluid" src="assets/img/cmu-sio/site-map.svg">
+            </div>
+            <div class="row" style="height: 5vh"></div>
+          </div>
+          <div id="list-item-4">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="cmu-sio-txt bold">04 Heuristic Evalution</h4>
+            <div class="container">
+              <p class="">After learning about Nielsen's usability engineering method, Heuristic Evaluation, I closely
+                examined my design to find potential usability problems.</p>
+              <p>I identifed 3 heuristics to improve upon:</p>
+              <ol>
+                <li><span class="bold">Recognition rather than recall</span>
+                  <p>The home page contains unnecessary information for the user to access after logging in. The design
+                    should be focused on the essentials for schedule planning and browsing in this context.</p>
+                  <img class="img-fluid" src="assets/img/cmu-sio/he-1.svg">
+                </li>
+                <li><span class="bold">Consistency and standards</span>
+                  <p>The navigation menu is ambiguous on “Academics”. Users might not know how to navigate to the course
+                    catalog in contrast to the option for scheduling.</p>
+                  <img class="img-fluid" src="assets/img/cmu-sio/he-2.svg">
+                </li>
+                <li><span class="bold">Aesthetics and minimalist design</span>
+                  <p>the home page contains unnecessary information for the user to access after logging in. The design
+                    should be focused on the essentials for schedule planning and browsing in this context.</p>
+                  <img class="img-fluid" src="assets/img/cmu-sio/he-3.svg">
+                </li>
+              </ol>
+            </div>
+            <div class="row" style="height: 5vh"></div>
+          </div>
+
+          <div id="list-item-5">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="cmu-sio-txt bold">05 Development V1</h4>
+            <div class="container">
+              <p class="">Based on my heuristic evaluation, I made some design changes as I began development with HTML
+                + CSS + JS in building an <a class=" cmu-sio-txt" href="https://pui-spring22.web.app/index.html"
+                  target="_blank" rel="noopener noreferrer">initial version of my site<i
+                    class="bi bi-arrow-up-right-square ml-2"></i></a></p>
+              <p>My goal was to have the home page, course catalog, and course details minus the functionality.</p>
+              <p>I faced a lot of development challenges with trial and error for different solutions. The biggest
+                challenge was spacing and layout for all pages. I discovered css grid as an alternative to flexbox but
+                had trouble making the page responsive. I couldn't solve the issue with spacing between the CMU logo
+                square and line. Another part that caused some trouble was the form on the details page for a course
+                since it was a form.</p>
+            </div>
+            <div class="row" style="height: 5vh"></div>
+          </div>
+          <div id="list-item-6">
+            <div class="row" style="height: 5vh"></div>
+            <h4 class="cmu-sio-txt bold">06 Development V2</h4>
+            <div class="container">
+              <p class="">Based on my heuristic evaluation, I made some design changes as I began development with HTML
+                + CSS + JS in building an <a class=" cmu-sio-txt" href="https://pui-spring22.web.app/index.html"
+                  target="_blank" rel="noopener noreferrer">initial version of my site<i
+                    class="bi bi-arrow-up-right-square ml-2"></i></a></p>
+              <p>My goal was to have the home page, course catalog, and course details minus the functionality.</p>
+              <p>I faced a lot of development challenges with trial and error for different solutions. The biggest
+                challenge was spacing and layout for all pages. I discovered css grid as an alternative to flexbox but
+                had trouble making the page responsive. I couldn't solve the issue with spacing between the CMU logo
+                square and line. Another part that caused some trouble was the form on the details page for a course
+                since it was a form.</p>
+            </div>
+            <div class="row" style="height: 5vh"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="height: 20vh"></div>
+
+    <div class="row">
+      <div class="col-10 offset-1 col-lg-5 p-4">
+        <h3 class="cmu-sio-txt bold mb-4">Reflection</h3>
+        <p class="mb-4">This was by far the biggest, most challenging, but most rewarding project I’ve worked on. From
+          the very beginning, I wanted to create an app I was passionate about and proud of. I’m very grateful to work
+          with my two team members in which our strong collaboration with one another truly made MemoMap successful.</p>
+        <p class="mt-4">Key Takeaways</p>
+        <ul>
+          <li>learning Swift and building an app for the first time</li>
+          <li>the complexity of building a fully functioning app from scratch –– lots of unforseen challenges with
+            development</li>
+          <li>scope creep! our app had too many moving pieces which left us feeling overwhelmed</li>
+          <li>importance of equal effort when working with others!</li>
+        </ul>
+      </div>
+      <div class="col-10 offset-1 offset-lg-0 col-lg-5 text-center d-flex flex-column justify-content-center">
+        <div class="container" width="80%">
+          <img src="assets/img/cmu-sio/fair.jpeg" width="80%">
+          <p class="m-2">my team with our mentors at the project showcase!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="height: 20vh"></div>
+
+
+    <footer class="container-fluid">
+      <div class="row justify-content-center">
+        <img src="assets/img/kimberly-gao.svg" width="80%">
+      </div>
+      <div class="row text-center">
+        <div class="container mt-4">
+          <i class="bi bi-linkedin m-4"></i>
+          <i class="bi bi-envelope m-4"></i>
+          <i class="bi bi-github m-4"></i>
+        </div>
+      </div>
+    </footer>
+
+    <div class="row" style="height: 10vh"></div>
+  </div>
+
+
+
+  <script src="assets/js/scroll.js"></script>
+</body>
+
+</html>
