@@ -1,7 +1,12 @@
 :root {
   --memo-map-bg: #E5E8FF;
   --memo-map-txt: #1027FC;
+
   --rent-easy-bg: #F5DBD3;
+  --rent-easy-txt-r: #CF4C22;
+  --rent-easy-txt-a: #1727AE;
+
+
   --bridal-shower-bg: #BFD3BE;
   --cmu-sio-bg:#F5F4F4; /*#B8CAC4;*/
   --cmu-sio-txt: #A80000;
@@ -97,6 +102,14 @@ a:hover {
 
 .rent-easy-bg {
   background-color: var(--rent-easy-bg);
+}
+
+.rent-easy-txt-r {
+  color: var(--rent-easy-txt-r);
+}
+
+.rent-easy-txt-a {
+  color: var(--rent-easy-txt-a);
 }
 
 .bridal-shower-bg {
