@@ -49,7 +49,7 @@
       <div class="row equal">
         <div class="col-10 col-lg-4 offset-1 d-flex flex-column justify-content-between rent-easy-bg p-4 drop-shadow">
           <div class="container pt-4 bold">
-            <h1 class="rent-easy-txt-a bold">RentEasy</h1>
+            <h1 class="rent-easy-txt-r bold">RentEasy</h1>
             <p class="subtitle">property rental platform</p>
             <p class="heading">ui/ux design</p>
           </div>
@@ -142,12 +142,13 @@
 
       <div class="row">
         <div class="col-10 col-lg-2 offset-1">
-          <h2 class="rent-easy-txt bold">Process</h2>
+          <h2 class="rent-easy-txt-a bold">Process</h2>
           <div id="rent-easy-process" class="d-flex flex-column heading bold">
             <a class="scroll-item" href="#list-item-1">01 Research + Personas</a>
-            <a class="scroll-item" href="#list-item-2">02 Scenarios + Storyboards + Sketches</a>
-            <a class="scroll-item" href="#list-item-3">03 Responsive Design</a>
-            <a class="scroll-item" href="#list-item-5">04 Pitch</a>
+            <a class="scroll-item" href="#list-item-2">02 Scenarios</a>
+            <a class="scroll-item" href="#list-item-3">03 Refinement</a>
+            <a class="scroll-item" href="#list-item-4">04 Lo-fi Wireframes</a>
+            <a class="scroll-item" href="#list-item-5">05 Hi-fi Prototypes</a>
           </div>
         </div>
 
@@ -155,81 +156,156 @@
           class="process-scroll col-10 col-lg-8 offset-1 offset-lg-0 rent-easy-bg drop-shadow p-4" tabindex="0">
           <div id="list-item-1">
             <div class="row" style="height: 3vh"></div>
-            <h4 class="rent-easy-txt bold">01 Problem</h4>
+            <h4 class="rent-easy-txt bold">01 Research + Personas</h4>
 
             <div class="container">
-              <h5 class="mb-2">Current SIO</h5>
-              <div class="row text-center">
-                <div class="col">
-                  <img class="img-fluid m-1" src="assets/img/rent-easy/current-1.svg">
-                  <p class="p-0">Plan Schedule</p>
-                </div>
-                <div class="col">
-                  <img class="img-fluid m-1" src="assets/img/rent-easy/current-2.svg">
-                  <p>Browse Courses</p>
-                </div>
-                <div class="col">
-                  <img class="img-fluid m-1" src="assets/img/rent-easy/current-3.svg">
-                  <p>View Courses</p>
-                </div>
+              <p>We started our design process by defining key stakeholders in the rental space:</p>
+              <ul>
+                <li>Customer –– Landlord</li>
+                <li>Business Ownder –– Head of Property Management Company</li>
+                <li>Service Provider –– Leasing Agent</li>
+              </ul>
+              <div class="container-fluid text-center m-4">
+                <img class="img-fluid mb-4" src="assets/img/rent-easy/research-1.png">
               </div>
-              <p class="mt-4">Looking at the current SIO, I observed many issues I wanted to address in my redesign.</p>
-              <p class="m-0">The <span class="bold">main issues</span> included:</p>
+              <p>We began researching, creating personas, and developing intial scenarios for all 3 stakeholders. Due
+                time constraints of 36 hours, we conducted secondary research and later confirmed our designs through
+                primary research.</p>
+
+              <h5 class="mb-2">Landlord Insights</h5>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid text-center" src="assets/img/rent-easy/research-2.svg">
+                <img class="img-fluid" src="assets/img/rent-easy/research-3.svg">
+              </div>
+              <p class="mb-0 bold">Learnings</p>
               <ul>
-                <li>cognitive overload across all pages</li>
-                <li>lack of accessibility in color constrast of text</li>
-                <li>cannot browse all courses without filtering by at least one category or search</li>
+                <li>being a landlord is risky</li>
+                <li>it's difficult to find the right tenants</li>
+                <li>a large percentage of landlords often use property management companies</li>
               </ul>
-              <p class="m-0">Other issues I observed but did not make a priority to address included:</p>
+              <p class="mb-0 bold">Key Priorities</p>
               <ul>
-                <li>no differentiation between undergrad and graduate courses</li>
-                <li>waitlisting and course reservation transparency</li>
-                <li>cannot view schedule while browsing courses</li>
+                <li>easy, efficient communication with renters and maintenance</li>
+                <li>easy screening</li>
               </ul>
+              <p class="mb-0"><span class="bold">Takeaway</span> –– painpoints are currently addressed by solutions that
+                exist in the market,
+                not sure what value we'd be able to add here.</p>
+
+              <h5 class="mb-2">Leasing Agent Insights</h5>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid text-center" src="assets/img/rent-easy/research-4.svg">
+                <img class="img-fluid" src="assets/img/rent-easy/research-5.svg">
+              </div>
+              <p class="mb-0 bold">Learnings</p>
+              <ul>
+                <li>leasing agents constantly on the move but still need to handle client communication</li>
+                <li>responsible for ensuring all units assigned to them are occupied</li>
+                <li>a large percentage of landlords often use property management companies</li>
+              </ul>
+              <p class="mb-0 bold">Key Priorities</p>
+              <ul>
+                <li>easy communication with tenants</li>
+                <li>quick and efficient scheduling with prospective renters</li>
+                <li>maintaining an organized view of tasks and properties</li>
+              </ul>
+              <p class="mb-0"><span class="bold">Takeaway</span> –– felt like a user that would heavily benefit from a
+                responsive design solution due to the nature of their job.</p>
+
+
+              <h5 class="mb-2">Property Management Head Insights</h5>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid text-center" src="assets/img/rent-easy/research-6.svg">
+                <img class="img-fluid" src="assets/img/rent-easy/research-7.svg">
+              </div>
+              <p class="mb-0 bold">Learnings</p>
+              <ul>
+                <li>renting an apartment today is a fragmented experience – searching, scheduling, viewing</li>
+                <li>scheduling is a key issue due to a number of changed/cancelled appointments</li>
+              </ul>
+              <p class="mb-0 bold">Key Priorities</p>
+              <ul>
+                <li>creating a "super all in one application" that consolidates these fragmented experiences into one
+                  view</li>
+                <li>matching the right people to properties</li>
+              </ul>
+              <p class="mb-0"><span class="bold">Takeaway</span> –– interesting to think about the rental expereince
+                from the perspective of the Zillow CEO and the point around fragmented nature of rental expereinces
+                today was an element we decided that we were interested in exploring further.</p>
+
+              <h5 class="mb-2">Revised Stakeholders</h5>
+              <p>From our intial research process, we discovered a lot of overlap and role sharing for the personas we
+                initially investigated. We also realized that the rental perspective (which we did not pursue at first)
+                was crucial due to the large interaction with the leasing agent.</p>
+              <p>We decided to pivot and focus on the Leasing Agent and Renter as our stakeholders. We were especially
+                interested in the Leasing Agent perspective because we felt like they would benefit the most from a
+                responsive design solution.</p>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid" src="assets/img/rent-easy/research-8.svg">
+                <img class="img-fluid" src="assets/img/rent-easy/research-9.svg">
+              </div>
+              <div class="row" style="height: 5vh"></div>
             </div>
-            <div class="row" style="height: 5vh"></div>
           </div>
           <div id="list-item-2">
             <div class="row" style="height: 5vh"></div>
-            <h4 class="rent-easy-txt bold">02 Rapid Prototyping</h4>
-            <div class="container">
-              <p class="mt-4">I began by creating <span class="bold">3 initial rapid prototypes</span> in 20 minutes on
-                Figma. </p>
-              <h5 class="mb-3 ">P1. Daily Schedule with Sidebar Control</h5>
-              <img class=img-fluid" src="assets/img/rent-easy/wireframe-1.svg">
-              <h5 class="mb-3 ">P2. List Schedule and Separate Control Page</h5>
-              <img class=img-fluid" src="assets/img/rent-easy/wireframe-2.svg">
-              <h5 class="mb-3 ">P3. Table Schedule and Tabs for Features</h5>
-              <img class=img-fluid" src="assets/img/rent-easy/wireframe-2.svg">
-              <p class="mt-4">I conducted a quick <span class="bold">user study</span> on each of these prototypes and
-                received the following feedback:</p>
-              <ul>
-                <li>P1 offers traditional schedule view design pattern which is hard to visualize mentally</li>
-                <li>P2 and P3 require user to remember the schedule plan when searching for a new schedule</li>
-                <li>P3 dropdown filter offers recognition over recall</li>
-                <li>P3 produces cognitive overload with all the description</li>
-              </ul>
-              <p>Overall, the P1 showed better schedule functionality with a simplified sidebar control on the left side
-                and calendar view on the right. P3's dropdown filter eases search and browse functionality for users.
-              </p>
+            <h4 class="rent-easy-txt bold">02 Scenarios, Storyboards, & Sketches</h4>
+            <p>We rapidly generated 20 scenrios across the 3 personas we defined. In these scenarios, we targeted
+              inment needs through framing problems areas and providing context for a potential solution.</p>
+            <p>Of the 20 scenarios, we each reviewed all of them and tagged the ones we felt were valuable and had
+              sound context. We discussed the highly tagged scenarioes and futher developed and explored the top 5
+              through storyboards and sketches.</p>
+            <div class="container-fluid text-center mt-4 mb-4">
+              <img class="img-fluid" src="assets/img/rent-easy/scenarios.svg">
+              <p>Top 5 Scenarios</p>
+            </div>
+            <div class="container-fluid text-center mt-4 mb-4">
+              <img class="img-fluid" src="assets/img/rent-easy/storyboard.svg">
+              <p>Scenario 1 Storyboard</p>
+              <img class="img-fluid" src="assets/img/rent-easy/sketch.svg">
+              <p>Scenario 1 Sketch</p>
             </div>
             <div class="row" style="height: 5vh"></div>
           </div>
           <div id="list-item-3">
             <div class="row" style="height: 5vh"></div>
-            <h4 class="rent-easy-txt bold">03 Hi-fi Prototype</h4>
+            <h4 class="rent-easy-txt bold">03 Refinement –– Speed Dating and User Interviews</h4>
             <div class="container">
-              <p class="">I defined a few <span class="bold">design goals</span> which guided my design choices: </p>
+              <h5>Scenario, Storyboard, & Sketches Speed Dating</h5>
+              <p>We conducted two speed dating sessions for our different ideas and gathered some useful insights.</p>
+              <p>Ideas</p>
               <ul>
-                <li>fast functionality for busy student life</li>
-                <li>full course catalog with simple browsing</li>
-                <li>quick links to popular resources</li>
+                <li>refining log-in process for privacy and security</li>
+                <li>a timeline or notfication feature</li>
+                <li>communication methods within the platform</li>
               </ul>
-              <p>Moving forward, I decided to take the best visual and most convenient aspects of the 3 prototypes. I
-                wanted to include more symbols and dropdown menus (instead of input boxes). I altered the button
-                placement for more familiar locations and simplified the search feature with the option for advanced
-                search.</p>
-              <h5>Final Prototype</h5>
+              <p>Feedback</p>
+              <ul>
+                <li>looking into existing listing platforms for design patterns</li>
+                <li>introduce something different that makes us competitive with other existing platforms</li>
+              </ul>
+              <h5>Leasing Agent User Interview</h5>
+              <p>Before diving into lo-fi prototypes, we were able to conduct a user interview with a local leasing
+                agent for more insight. We asked about their current set of tasks (leases, tours, maintenance,
+                scheduling, and move-in) and challenges they're currently facing. This was very helpful for guidance
+                on what to include in our prototypes.</p>
+              <p>Key Insights</p>
+              <ul>
+                <li>focus on desktop and mobile</li>
+                <li>need a consolidated portal for easy task management</li>
+                <li>need an easy way to show properies and listings</li>
+                <li>scheduling is a major pain point</li>
+                <li>move in details need an easy way to be sent out</li>
+              </ul>
+              <p>We discovered they use desktop and mobile devices most frequently. They thought a watch would be a
+                helpful addition but they wouldn't reply on a watch to make any schedulings or communication.</p>
+              <h5>Refined Sketches</h5>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid" src="assets/img/rent-easy/sketch-1.svg">
+                <img class="img-fluid" src="assets/img/rent-easy/sketch-2.svg">
+                <img class="img-fluid" src="assets/img/rent-easy/sketch-3.svg">
+              </div>
+
               <div class="embed-responsive embed-responsive-4by3">
                 <iframe class="embed-responsive-item" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
                   height="450"
@@ -243,46 +319,74 @@
           </div>
           <div id="list-item-4">
             <div class="row" style="height: 5vh"></div>
-            <h4 class="rent-easy-txt bold">04 Heuristic Evalution</h4>
+            <h4 class="rent-easy-txt bold">04 Lo-fi Wireframes</h4>
             <div class="container">
-              <p class="">After learning about Nielsen's usability engineering method, Heuristic Evaluation, I closely
-                examined my design to find potential usability problems.</p>
-              <p>I identifed 3 heuristics to improve upon:</p>
-              <ol>
-                <li><span class="bold">Recognition rather than recall</span>
-                  <p>The home page contains unnecessary information for the user to access after logging in. The design
-                    should be focused on the essentials for schedule planning and browsing in this context.</p>
-                  <img class="img-fluid" src="assets/img/rent-easy/he-1.svg">
-                </li>
-                <li><span class="bold">Consistency and standards</span>
-                  <p>The navigation menu is ambiguous on “Academics”. Users might not know how to navigate to the course
-                    catalog in contrast to the option for scheduling.</p>
-                  <img class="img-fluid" src="assets/img/rent-easy/he-2.svg">
-                </li>
-                <li><span class="bold">Aesthetics and minimalist design</span>
-                  <p>the home page contains unnecessary information for the user to access after logging in. The design
-                    should be focused on the essentials for schedule planning and browsing in this context.</p>
-                  <img class="img-fluid" src="assets/img/rent-easy/he-3.svg">
-                </li>
-              </ol>
+              <p>Based on our sketches, our team compiled a set of lo-fi wireframes. These designs were desktop and mobile focused as these two sizes are most frequently used by the Leasing Agent or Renter.</p>
+              <p>We priotized desktop since they are most used while mobile serves as a synethsized version for "on-the-go" communication or schedulings.</p>
+              <p>We mapped out the functionalities for both sizes and investigated how to best represent them across the two.</p>
+              
+              <p>The desktop view is broken down into dashboard, inbox, calendar/appointments, properties, tenants, and maintenance to echo our user interview findings.</p>
+              <p>The dashboard is a collection of all important information, accessible at a glance, while all other pages include more details in specific categories. We studied existing design patterns and incorportaed them into our design (i.e. listings, calendar views).</p>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid" src="assets/img/rent-easy/lofi-desktop.svg">
+              </div>
+
+              <p>As for mobile, the menu on the left in desktop is condensed into a hamburger on the top left. The tab bar at the bottom includes what we evaluated to be the most important functions – inbox, calendar, and account.</p>
+              <p>It was challenging to think about how to organize information from the larger desktop screen to a small mobile screen while still displaying the same content. We asked the question "what would users most likely do with mobile vs. desktop?" to guide our design decisions.</p>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid" src="assets/img/rent-easy/lofi-mobile.svg">
+              </div>
+
+              <h5>Critique</h5>
+              <p>Partnering with another team as well as discussion with our professors, we received valuable feedback on our lo-fi wireframes.</p>
+              <p>Notes</p>
+              <ul>
+                <li>focus on a domain/problem we're solving</li>
+                <li>responsiveness –– how can we manage content for multiple stakeholders across multiple devices? (aiming for 4)</li>
+                <li>zero in on one specific scenario rather than the whole platform  –– especially scheduling</li>
+                <li>interaction between leasing agent and renter into a specific scenario –– pain point of no-shows</li>
+              </ul>
+              <p>Based on this feedback, we took a closer look and discussed the scenario we wanted to focus on and divided the different screens/flows amongst our team members. I was specifically responsible for the mobile apppointment screens.</p>
             </div>
             <div class="row" style="height: 5vh"></div>
           </div>
 
           <div id="list-item-5">
             <div class="row" style="height: 5vh"></div>
-            <h4 class="rent-easy-txt bold">05 Development V1</h4>
+            <h4 class="rent-easy-txt bold">05 Hi-fi Prototypes</h4>
             <div class="container">
-              <p class="">Based on my heuristic evaluation, I made some design changes as I began development with HTML
-                + CSS + JS in building an <a class=" rent-easy-txt" href="https://pui-spring22.web.app/index.html"
-                  target="_blank" rel="noopener noreferrer">initial version of my site<i
-                    class="bi bi-arrow-up-right-square ml-2"></i></a></p>
-              <p>My goal was to have the home page, course catalog, and course details minus the functionality.</p>
-              <p>I faced a lot of development challenges with trial and error for different solutions. The biggest
-                challenge was spacing and layout for all pages. I discovered css grid as an alternative to flexbox but
-                had trouble making the page responsive. I couldn't solve the issue with spacing between the CMU logo
-                square and line. Another part that caused some trouble was the form on the details page for a course
-                since it was a form.</p>
+              <p>Taking into account the feedback we received on our lo-fo wireframes, we continued with the design process towards hi-fi prototypes.</p>
+              <h5>Initial Desktop Prototype</h5>
+              <p>For the leasing agent, we kept the dashboard displaying weekly to-do's, inbox, and listings. It comprised of all the features we wanted to include but looking back we were definitely trying to make our design complete rather than novel.</p>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid" src="assets/img/rent-easy/hifi-1.svg">
+              </div>
+              <p>As for the renter looking for an apartment and booking an appointment, our goal was to create a personalized, easy booking experience.</p>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid mb-4" src="assets/img/rent-easy/hifi-2.svg">
+                <img class="img-fluid mt-4" src="assets/img/rent-easy/hifi-3.svg">
+              </div>
+
+              <p>In addition to mobile, we also wanted to include a watch experience to increase the level of responsiveness in our design. Although the watch experience was overlooked in the speed dating session, our team felt like it still added value to the platform considering how time-sensitive notifications can be for the leasing agent.</p>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid mb-4" src="assets/img/rent-easy/hifi-4.svg">
+              </div>
+
+              <h5>Critique</h5>
+              <p>Presenting our work, we received more valuable feedback mainly on our platform features. We realized we lacked novel features to differentiate our solution to existing ones. Additionally, we needed a more scenario based user flow to present with such that the audience is able to put themselves in the situation and understand the needs we've addresses.</p>
+              <p>Novel Feature Ideas</p>
+              <ul>
+                <li>consolidated flow for appointment scheduling</li>
+                <li>adding "feedback flows" to integrate into the apartment matching experience</li>
+                <li>highlighting connections between the useful "data" the platform has –– i.e. similar properies, popular properties</li>
+              </ul>
+
+              <h5>Design Decisions</h5>
+              <p>Since we designed for two stakeholders simultaneously and presented them together, we made a distingushment between the two using two contrasting colors. Using orange for the leasing agent and blue for the renters helped both us and our audience differentiate when looking at our designs.</p>
+              <p>Our UI follows a simplistic and modern design since from a UX aspect, we didn't want our design to distract or interfere from the user's goasl</p>
+              <div class="container-fluid text-center mt-4 mb-4">
+                <img class="img-fluid mb-4" src="assets/img/rent-easy/design-decisions.svg">
+              </div>
             </div>
             <div class="row" style="height: 5vh"></div>
           </div>
