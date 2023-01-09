@@ -3,6 +3,7 @@
   --memo-map-txt: #1027FC;
 
   --rent-easy-bg: #F5DBD3;
+  --rent-easy-bg-r: #D1D4EF;
   --rent-easy-txt-r: #CF4C22;
   --rent-easy-txt-a: #1727AE;
 
@@ -102,6 +103,10 @@ a:hover {
 
 .rent-easy-bg {
   background-color: var(--rent-easy-bg);
+}
+
+.rent-easy-bg-r {
+  background-color: var(--rent-easy-bg-r);
 }
 
 .rent-easy-txt-r {
