@@ -27,7 +27,7 @@
     "name": "Lisa's Bridal Shower",
     "description": "digital invite and rsvp",
     "tags": "web dev + ui/ux design",
-    "url": "bridal-invite.html",
+    "url": "",
     "img": "assets/img/bridal-invite.svg",
     "color": "bridal-shower"
   },
@@ -35,7 +35,7 @@
     "name": "Asian Designers",
     "description": "interactive gallery display",
     "tags": "info/grid design",
-    "url": "asian-designers.html",
+    "url": "",
     "img": "assets/img/asian-designers.svg",
     "color": "asian-designers"
   },
@@ -43,7 +43,7 @@
     "name": "Pittsburgh Zoo",
     "description": "in park screen display",
     "tags": "info design",
-    "url": "pitt-zoo.html",
+    "url": "",
     "img": "assets/img/pitt-zoo.svg",
     "color": "pitt-zoo"
   },
