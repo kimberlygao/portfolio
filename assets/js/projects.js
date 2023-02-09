@@ -17,6 +17,13 @@ async function populate() {
     var card = $('<div></div>').addClass("card")
     card.append($('<img/>').attr('class', "card-img-top").attr('src', projects[i]["img"]))
 
+    if (projects[i]["url"] == "") {
+      card.attr("class", "overlay-card")
+      var overlay = $('<div></div>').attr('class', "overlay text")
+      overlay.append($('<div></div>').attr('class', "text")).html("coming soon!")
+      card.append(overlay)
+    }
+
 
     var cardBody = $('<div></div>').addClass(`card-body ${projects[i]["color"]}-bg`).append($("<h4></h4>").addClass("card-title").text(projects[i]["name"]))
     var description = $('<p></p>').addClass("card-text").text(projects[i]["description"])
@@ -34,10 +41,18 @@ async function populate() {
     
     card.append(cardBody)
 
+    if (projects[i]["url"] != "") {
+      var cardAnchor = $('<a></a>').attr("href",projects[i]["url"])
+      cardAnchor.append(card)
+      cardDiv.append(cardAnchor)
+    } else {
+      cardDiv.append(card)
+    }
+
     
-    var cardAnchor = $('<a></a>').attr("href",projects[i]["url"])
-    cardAnchor.append(card)
-    cardDiv.append(cardAnchor)
+    // var cardAnchor = $('<a></a>').attr("href",projects[i]["url"])
+    // cardAnchor.append(card)
+    // cardDiv.append(cardAnchor)
     div.append(cardDiv)
   }
 
