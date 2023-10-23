@@ -2,6 +2,9 @@
   --memo-map-bg: #E5E8FF;
   --memo-map-txt: #1027FC;
 
+  --reddit-txt: #FF4500;
+  --reddit-bg: #FFE2D7;
+
   --rent-easy-bg: #F5DBD3;
   --rent-easy-bg-r: #D1D4EF;
   --rent-easy-txt-r: #CF4C22;
@@ -13,7 +16,9 @@
   --cmu-sio-txt: #A80000;
   --asian-designers-bg: #EFF0F2;
   --pitt-zoo-bg: #C8DEF4;
+
   --accent-bg: #40873E;
+  --accent-color: #347032;
 }
 
 body {
@@ -33,6 +38,14 @@ body {
 
 .heading {
   font-size: 18px;
+}
+
+.heading-big {
+  font-size: 22px;
+}
+
+.caption {
+  font-style: italic;
 }
 
 li {
@@ -93,12 +106,24 @@ a:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.white-bg {
+  background-color: white;
+}
+
 .memo-map-bg {
   background: var(--memo-map-bg);
 }
 
 .memo-map-txt {
   color: var(--memo-map-txt);
+}
+
+.reddit-bg {
+  background: var(--reddit-bg);
+}
+
+.reddit-txt {
+  color: var(--reddit-txt);
 }
 
 .rent-easy-bg {
@@ -167,6 +192,11 @@ a:hover {
   display: none;
 }
 
+
+td {
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
 
 
 /* path {
