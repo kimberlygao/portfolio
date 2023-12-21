@@ -24,7 +24,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 28px;
 }
 
@@ -52,6 +52,10 @@ li {
   line-height: 2em;
 }
 
+.bold-m {
+  font-weight: 500;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -64,17 +68,47 @@ a {
   color: #000000;
 }
 
-a:hover {
+.no-link {
+  text-decoration: none;
+}
+
+.no-link:hover {
+  text-decoration: none;
+}
+
+.underline:hover {
   color: var(--accent-color);
 }
 
 .underline {
   text-decoration: underline;
-  text-decoration-color: var(--accent-color);
+  text-decoration-color: black;
+}
+
+.memo-map-border {
+  border: 15px solid var(--memo-map-bg)
+}
+
+.memo-map-border:hover {
+  transition: .4s ease;
+  background-color: var(--memo-map-bg);
+}
+
+.reddit-border {
+  border: 15px solid var(--reddit-bg)
+}
+
+.reddit-border:hover {
+  transition: .4s ease;
+  background-color: var(--reddit-bg);
 }
 
 .green {
   color: var(--accent-color);
+}
+
+.black {
+  color: black;
 }
 
 /* .card {

@@ -108,7 +108,7 @@
             </div>
             <div class="col-12 col-lg-8 text-center">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1DJQCkg8undj-PUtU4_YZo9t9K0eydnnY/preview" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1DJQCkg8undj-PUtU4_YZo9t9K0eydnnY/preview" allowfullscreen ></iframe>
               </div>
             </div>
           </div>
@@ -312,28 +312,19 @@
           <h4 class="memo-map-txt bold">3 | prototyping + api + database</h4>
           <p class="bold heading">turn wireframes interactive and ensure proof of concept for development</p>
           <p>From our hi-fi wireframes, I created an <span class="memo-map-txt bold">interative prototype</span>, building upon the breath and depth into an fully encompassing user experience. This included screens for user profiles and maintaining friends. I conducted 2 of 4 user tests with the prototype. After giving users a brief basis of the app, we asked them to <span class="memo-map-txt bold">think aloud as a usability test.</span></p>
-        </div>
-        <div class="col-10 col-lg-5 offset-1 mb-5">
-          <p>insert gif of prototype here</p>
-        </div>
-        <div class="col-10 col-lg-5 offset-1 mb-5">
+          <div class="row" style="height: 5vh"></div>
           <p>As for our API, we researched and compared both Apple's MapKit and Google Maps API. After configuring and testing both APIs, we decided to use <span class="memo-map-txt bold">Apple's MapKit</span> for its streamlined integration with XCode and more flexible ability to drop pins. This was to <span class="memo-map-txt bold">ensure we could implement to core functionalities planned for the app.</span></p>
-        </div>
-        <div class="col-10 col-lg-5 offset-1 mb-5">
-          <p>insert photo of api if possible</p>
-        </div>
-        <div class="col-10 col-lg-5 offset-1 mb-5">
           <p>In order to store data and images, we designed a <span class="memo-map-txt bold">Firestore NoSQL database</span> structure through data mapping our wireframes. We then set up the corresponding database inside the Firebase system.</p>
         </div>
         <div class="col-10 col-lg-5 offset-1 mb-5">
-          <p>insert photo of data map if possible</p>
+          <img src="assets/img/memo-map/prototype.gif" alt="gif of memomap figma prototype" style="padding: 10px; background-color: black; border-radius: 45px;">
         </div>
       </div>
 
       <div class="row" style="height: 5vh"></div>
 
       <div class="row">
-        <div class="col-10 col-lg-5 offset-1 mb-5">
+        <div class="col-10 col-lg-8 offset-1 mb-5">
           <h4 class="memo-map-txt bold">3 | developing version 1</h4>
           <p class="bold heading">code an mvp (harder than we thought)</p>
           <p class="mb-2">For this first version, we determined <span class="memo-map-txt bold">A-level features</span> to tackle first</p>
@@ -355,7 +346,7 @@
       <div class="row" style="height: 5vh"></div>
 
       <div class="row">
-        <div class="col-10 col-lg-6 offset-1 mb-5">
+        <div class="col-10 col-lg-8 offset-1 mb-5">
           <h4 class="memo-map-txt bold">4 | user testing version 1</h4>
           <p class="bold heading">get feedback on our (rough) mvp</p>
           <p>We conducted <span class="memo-map-txt bold">6 sessions with target users asked think aloud as they freely navigated the app</span>. As expected, most of our feebdack centered around UI elements which didn't quite match our design prototype due to time and/or technical constraints.</p>
@@ -390,15 +381,15 @@
           </table>
           <p>As expected, we received lots of feedback on the UI, hindering the user experience and emphasizing the importance of a strong UI. We revised our development with the action items above, addressing issues our participants faced.</p>
         </div>
-        <div class="col-10 col-lg-4 offset-1 mb-5">
+        <!-- <div class="col-10 col-lg-4 offset-1 mb-5">
           <p>label image with issues here</p>
-        </div>
+        </div> -->
       </div>
 
       <div class="row" style="height: 5vh"></div>
 
       <div class="row">
-        <div class="col-10 col-lg-5 offset-1 mb-5">
+        <div class="col-10 col-lg-8 offset-1 mb-5">
           <h4 class="memo-map-txt bold">4 | developing version 2</h4>
           <p class="bold heading">putt everything we have into getting our app to work (and look good)</p>
           <p>In addition to the action items above, our B-level and C-level features needed attention:</p>
@@ -441,6 +432,17 @@
 
     <footer class="container-fluid">
       <div class="row pl-5 pr-5">
+        <div class="col-10 col-md-6 text-left mb-5 p-0">
+          
+          <p class="heading"><img width="50vh" src="assets/img/logo-circle-black.svg" class="mr-2">designed + developed</p>
+        </div>
+        <div class="col-10 col-md-6 mt-2 text-right p-0">
+          <a href="reddit.html"><p class="heading"><span class="bold">next project </span> reddit mod tools –></p></a> 
+        </div>
+      </div>
+    </footer>
+    <!-- <footer class="container-fluid">
+      <div class="row pl-5 pr-5">
         <div class="col-10 col-lg-4 text-left p-0 d-flex flex-column justify-content-center">
           <p class="heading"><img width="60vh" src="assets/img/logo-circle-black.svg" class="mr-2">designed + developed with love</p>
         </div>
@@ -454,8 +456,7 @@
           <a href="reddit.html"><p class="heading"><span class="bold">next project –</span> reddit mod tools –></p></a>
         </div>
       </div>
-      
-    </footer>
+    </footer> -->
     
   </div>
   <script src="assets/js/scroll.js"></script>
