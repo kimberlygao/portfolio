@@ -103,22 +103,29 @@
       <div class="col-10 offset-1">
         <h3 class="reddit-txt bold">final outcomes</h3>
         <div class="row m-4">
-          <div class="col-12 col-lg-2 offset-lg-1">
-            <h4 class="bold">prototypes</h4>
+          <div class="col-12 col-lg-2 offset-lg-1 pb-2">
+            <h4 class="bold">mod log prototype</h4>
           </div>
-          <div class="col-12 col-lg-8 text-center">
-            <div class="embed-responsive embed-responsive-16by9">
-              <!-- <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1DJQCkg8undj-PUtU4_YZo9t9K0eydnnY/preview" allowfullscreen></iframe> -->
-            </div>
+          <div class="col-12 col-lg-8 text-center mb-0">
+            <img src="assets/img/reddit/modlog-full.gif" style="padding: 10px; background-color: black; border-radius: 33px;" width="300vh">
           </div>
         </div>
         <div class="row" style="height: 5vh"></div>
         <div class="row m-4">
-          <div class="col-12 col-lg-2 offset-lg-1">
-            <h4 class="bold">presentation</h4>
+          <div class="col-12 col-lg-2 offset-lg-1 pb-2">
+            <h4 class="bold">modmail prototype</h4>
           </div>
           <div class="col-12 col-lg-8 text-center">
-            <!-- <img class="" src="assets/img/reddit/poster.png" width="100%"> -->
+            <img src="assets/img/reddit/modmail-full.gif" style="padding: 10px; background-color: black; border-radius: 33px;" width="300vh">
+          </div>
+        </div>
+        <div class="row" style="height: 5vh"></div>
+        <div class="row m-4">
+          <div class="col-12 col-lg-2 offset-lg-1 pb-2">
+            <h4 class="bold">mod discussion prototype</h4>
+          </div>
+          <div class="col-12 col-lg-8 text-center">
+            <img src="assets/img/reddit/mod-discussion.gif" style="padding: 8px 10px 8px 8px; background-color: black; border-radius: 28px;" width="300vh">
           </div>
         </div>
         <div class="row" style="height: 5vh"></div>
@@ -128,7 +135,7 @@
           </div>
           <div class="col-12 col-lg-8 text-center">
             <div class="embed-responsive embed-responsive-16by9">
-              <!-- <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1Yk0L_gqEvQ55IU19aU7uRvbj5Zeddc_K/preview" allowfullscreen></iframe> -->
+              <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1uQOd4uuCc_uKI7VRBd7gugaluRBB9cv5/preview" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -211,19 +218,22 @@
         <p>On desktop or web, a mod log contains filters by time frame, moderator, actions, username, and post url. On mobile, there are only two filters – moderator and actions.</p>
         <p>My work <span class="bold reddit-txt">completes the missing 3 filters on mobile</span> (time frame, username, and post url), providing the same functionality available on desktop (and 3rd party platforms).</p>
       </div>
-      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center text-center">
         <img src="assets/img/reddit/mlog-problem.png" width="100%">
+        <p class="caption mt-4">fig. mod log on mobile vs desktop showing parity gap</p>
       </div>
     </div>
 
     <div class="row" style="height: 5vh"></div>
 
     <div class="row">
-      <div class="col-10 col-lg-8 offset-1">
+      <div class="col-10 col-lg-6 offset-1">
         <h4 class="reddit-txt bold">2 | design process</h4>
         <p class="heading bold">understanding the mod domain & reddit's design system</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1">
         <p>Having only the basic knowledge of what a moderator does, <span class="bold reddit-txt">I had a lot to learn about mod motivations and goals</span>. I read tons of mod posts and comments (secondary research), watched many shadow sessions (contextual inquiry), and asked questions in order to build my own mental model.</p>
-        <p class="mb-2 bold reddit-txt">The essentials to mods – </p>
+        <p class="mb-2 bold reddit-txt">The essentials to understanding mods – </p>
         <ul>
           <li>mods prioritize efficiency (above anything else)</li>
           <li>each mod has their preferred platform – old reddit, new reddit, mobile app, mobile web, etc.</li>
@@ -233,12 +243,27 @@
           <li>mods are often part of multiple mod teams for different communities</li>
           <li>mods often have multiple accounts for different purposes</li>
         </ul>
-        <p>Reddit's UX has it's own design system, Reddit Product Language (RPL). Though familiar with Figma and its component functionality, RPL was far more robust in design practices and principles that I had used before so <span class="reddit-txt bold">I spent time reading documentation, testing, and understanding how to best use Reddit's design system.</span></p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 offset-lg-0 text-center">
+        <img src="assets/img/reddit/mind-map.png" width="100%">
+        <p class="caption mt-4">fig. mind map of mod ecosystem</p>
+      </div>
+       <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>Reddit has it's own design system, Reddit Product Language (RPL). Though I was familiar with Figma and its component functionality, RPL was far more robust in design practices and principles that I had used before so <span class="reddit-txt bold">I spent time reading documentation, testing, and understanding how to best use Reddit's design system.</span></p>
         <div class="row" style="height: 2vh"></div>
         <p class="heading bold">considering different methods of input</p>
-        <p>While filtering by different categories seems trivial, user input can be accepted in various forms leading to many possible design opportunities.</p>
-        <p>For time frame – I worked with the design systems team to create a date picker component which did not exist yet. In addition to creating the ability to filter on mobile, I realized I was able to improve the existing experience past the simplicity entering two dates. Given that mods want quick and easy actions, I prioritized set time frames before custom time frames which are less likely to be used.</p>
-        <p>For username – it wasn't clear to me whether or not the "u/" needed to be included in front of the input on desktop. Thus, I added a greyed out "u/" at the front of the input box. With the design intention, if a user inputed the "u/" themselves, it would be matching to the existing label to minimize user error beyond increased transparency.</p>
+        <p>While filtering by different categories seems trivial, user input can be prompted in various forms leading to many possible design opportunities.</p>
+        <p>For time frame – I worked with the design systems team to create a RPL date picker pattern using native iOS and Android components. This did not exist yet since there was no previous use for it. I also realized I was able to improve the existing experience by adding set time frames in addition to custom dates. Given that mods want quick and easy actions, I decided to prioritize set time frames in the flow before custom time frames.</p>
+        <p>For username – it wasn't clear to me whether or not the "u/" needed to be included in front of the input on desktop. Thus, I added a greyed out "u/" at the front of the input box. With the design intention, if a user inputed the "u/" themselves, it would be matching to the existing label to minimize user error and increase system transparency.</p>
+        <p>For post URL – the expected user journey is to copy and paste a post link rather than the post ID (which is the input requirement for desktop). In this case, the design is simple with a post URL label.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>Reddit has it's own design system, Reddit Product Language (RPL). Though I was familiar with Figma and its component functionality, RPL was far more robust in design practices and principles that I had used before so <span class="reddit-txt bold">I spent time reading documentation, testing, and understanding how to best use Reddit's design system.</span></p>
+        <div class="row" style="height: 2vh"></div>
+        <p class="heading bold">considering different methods of input</p>
+        <p>While filtering by different categories seems trivial, user input can be prompted in various forms leading to many possible design opportunities.</p>
+        <p>For time frame – I worked with the design systems team to create a RPL date picker pattern using native iOS and Android components. This did not exist yet since there was no previous use for it. I also realized I was able to improve the existing experience by adding set time frames in addition to custom dates. Given that mods want quick and easy actions, I decided to prioritize set time frames in the flow before custom time frames.</p>
+        <p>For username – it wasn't clear to me whether or not the "u/" needed to be included in front of the input on desktop. Thus, I added a greyed out "u/" at the front of the input box. With the design intention, if a user inputed the "u/" themselves, it would be matching to the existing label to minimize user error and increase system transparency.</p>
         <p>For post URL – the expected user journey is to copy and paste a post link rather than the post ID (which is the input requirement for desktop). In this case, the design is simple with a post URL label.</p>
       </div>
     </div>
@@ -285,7 +310,7 @@
         <p class="heading bold">the need for natively built feature on mobile</p>
         <p>Modmail serves as <span class="bold reddit-txt"> a native messaging system for mods to communicate with members of their communities, their team, and mod teams of other communities.</span>
            This provides a collaborative, consistent space for communication across mod teams within the Reddit system. </p>
-        <p>At this point, the modmail experience in the app was the same as the mobile website, offering, resulting in issues with intuitiveness and usability. More specifically, the experiece lacked content prioritization, platform specific design practices, and screen size optimization for a mobile app.</p>
+        <p>At this point, modmail in the app was the same experience as the mobile website, resulting in issues with intuitiveness and usability. More specifically, the experiece lacked content prioritization, platform specific design practices, and screen size optimization for a mobile app.</p>
         <p>As part of a larger effort to redesign and build modmail into a native app expereince, my work <span class="bold reddit-txt">focuses on the flow of composing a new message.</span></p>
       </div>
       <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto">
@@ -298,12 +323,11 @@
     <div class="row">
       <div class="col-10 col-lg-6 offset-1">
         <h4 class="reddit-txt bold">2 | design process</h4>
-        <p class="heading bold">upon first look, writing a new modmail message made no sense to me, this was a specific problem I aimed to solve.</p>
+        <p class="heading bold">upon first look, writing a new modmail message made no sense to me, this was a large problem I aimed to solve – clarity and intuitiveness.</p>
         <p>With the existing design, a mod was to "Post from" a specific community and the three choice types were "Moderator Discussion", "To User", and "To Subreddit".</p>
-        <p>But what did a "Moderator Discussion" mean? Where would this go? Asking my mentor, this was a discussion post amongst the mods in the community selected in "Post from". While this is offered, many mods use Slack or Discord to have team discussions, likely because of the difficult experience Modmail offers.</p>
-        <p>As for "To User" and "To Subreddit", selecting either of these options led to a input field to appear to type a specific community or username in. This was rather jarring in the change of the interface and required the user to be utmost precise with their inputted names.</p>
-        <p>At the bottom, mods often forget to toggle "Hide my username" to on, as they wanted to avoid disclosing their indiviudal username and send messages as "the mod team", preventing individual harassment from upset community members mods often deal with.</p>
-        <p>Reddit's UX has it's own design system, Reddit Product Language (RPL). Though familiar with Figma and its component functionality, RPL was far more robust in design practices and principles that I had used before so <span class="reddit-txt bold">I spent time reading documentation, testing, and understanding how to best use Reddit's design system.</span></p>
+        <p>But what did a "Moderator Discussion" mean? Where would this go? Asking my mentor, this was a discussion post amongst the mods in the community selected in "Post from". While this functionality is offered, many mods opt for Slack or Discord to faciliate team discussions, likely because of the difficult experience in Modmail.</p>
+        <p>As for "To User" and "To Subreddit", selecting either of these options led to a input field to appear to type a specific community or username in. This was rather jarring in the change of the interface and required the user to be utmost precise with their inputted names, not offering suggestions while typing or search.</p>
+        <p>At the bottom, mods often forget to toggle "Hide my username" on. This allows mods to remain anonymous as the mod team and hides their indiviudal username, preventing harassment from upset community members, a common issue for mods.</p>
       </div>
     </div>
 
