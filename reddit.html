@@ -113,7 +113,7 @@
         <div class="row" style="height: 5vh"></div>
         <div class="row m-4">
           <div class="col-12 col-lg-2 offset-lg-1 pb-2">
-            <h4 class="bold">modmail prototype</h4>
+            <h4 class="bold">modmail prototype (shipped)</h4>
           </div>
           <div class="col-12 col-lg-8 text-center">
             <img src="assets/img/reddit/modmail-full.gif" style="padding: 10px; background-color: black; border-radius: 33px;" width="300vh">
@@ -248,7 +248,10 @@
         <img src="assets/img/reddit/mind-map.png" width="100%">
         <p class="caption mt-4">fig. mind map of mod ecosystem</p>
       </div>
-      <div class="col-10 offset-1 pt-5">
+      <div class="col-10 col-lg-2 offset-1 d-flex flex-column justify-content-center pt-5 align-items-center">
+        <img src="assets/img/reddit/rpl.png" width="80%">
+      </div>
+      <div class="col-10 col-lg-8 offset-1 offset-lg-0 pt-5">
         <p>Reddit has it's own design system, Reddit Product Language (RPL). Though I was familiar with Figma and its component functionality, RPL was far more robust in design practices and principles that I had used before so <span class="reddit-txt bold">I spent time reading documentation, testing, and understanding how to best use Reddit's design system.</span></p>
       </div>
 
@@ -289,7 +292,7 @@
     <div class="row">
       <div class="col-10 col-lg-10 offset-1">
         <h4 class="reddit-txt bold">3 | prototype</h4>
-        <p class="heading bold">full flow of all 3 filters</p>
+        <p class="heading bold">delivered flow of all 3 filters</p>
         <div class="text-center">
           <img src="assets/img/reddit/modlog-full.gif" style="padding: 10px; background-color: black; border-radius: 33px;" width="300vh">
         </div>
@@ -299,17 +302,17 @@
     <div class="row" style="height: 5vh"></div>
 
     <div class="row">
-      <div class="col-10 col-lg-8 offset-1">
+      <div class="col-10 col-lg-10 offset-1">
         <h4 class="reddit-txt bold">4 | outcomes</h4>
         <p class="heading bold">product</p>
-        <p>With the designs of the 3 filters missing on mobile, developing them to be released on the app will improve the parity gap between desktop and mobile. This is a feature mods have been asking about for a while since some mods only use the app and cannot accomplish the same tasks.</p>
+        <p>With the designs of the 3 filters missing on mobile, developing them to be released on the app will improve the parity gap between desktop and mobile. This is a feature mods have been asking about for a while since some mods only use the mobile app.</p>
         <p class="heading bold">personal</p>
         <p>Often creating my own design systems, this was my first time learning and utilizing a robust design system documentation with Figma components. In order for such a large product to remain consistent and cohesive, the design system needs to be clear, direct, and standardized with information design. I gained insight into what is necessary to accomplish such and how it affects creating prototypes and design opportunties.</p>
         <P>With this first project, building domain knowledge was the most important for making informed design decisions. It was valuable to me as someone who has never used mod tools, to be able to read discussions by mods about their issues and watch recorded contextual inquiries with mods of the largest communities.</P>
       </div>
     </div>
 
-    <div class="row" style="height: 5vh"></div>
+    <div class="row" style="height: 10vh"></div>
 
     <div class="row">
       <div class="col-10 offset-1">
@@ -325,24 +328,73 @@
         <p class="heading bold">the need for natively built feature on mobile</p>
         <p>Modmail serves as <span class="bold reddit-txt"> a native messaging system for mods to communicate with members of their communities, their team, and mod teams of other communities.</span>
            This provides a collaborative, consistent space for communication across mod teams within the Reddit system. </p>
-        <p>At this point, modmail in the app was the same experience as the mobile website, resulting in issues with intuitiveness and usability. More specifically, the experiece lacked content prioritization, platform specific design practices, and screen size optimization for a mobile app.</p>
+        <p>At this point, modmail in the native app was the same experience as mobile and desktop web (just responsive), resulting in issues with intuitiveness and usability. More specifically, the experiece lacked content prioritization, platform specific design practices, and screen size optimization for a mobile app.</p>
         <p>As part of a larger effort to redesign and build modmail into a native app expereince, my work <span class="bold reddit-txt">focuses on the flow of composing a new message.</span></p>
       </div>
-      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto">
-        <img src="assets/img/reddit/mlog-problem.png" width="100%">
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-center m-auto text-center">
+        <img src="assets/img/reddit/modmail-old.png" width="100%">
+        <p class="caption mt-4">fig. modmail on desktop web vs native app, the exact same experience</p>
       </div>
     </div>
 
     <div class="row" style="height: 5vh"></div>
 
     <div class="row">
+      <div class="col-10 offset-1">
+        <h4 class="reddit-txt bold">2 | design approach</h4>
+        <p class="heading bold">on first glance, writing a new modmail message made no sense to me, this was a large problem I aimed to solve – clarity and intuitiveness.</p>
+      </div>
+      <div class="col-10 offset-1 pt-5">
+        <p class="heading bold">tackling the confusing sender/recipient selection</p>
+      </div>
       <div class="col-10 col-lg-6 offset-1">
-        <h4 class="reddit-txt bold">2 | design process</h4>
-        <p class="heading bold">upon first look, writing a new modmail message made no sense to me, this was a large problem I aimed to solve – clarity and intuitiveness.</p>
-        <p>With the existing design, a mod was to "Post from" a specific community and the three choice types were "Moderator Discussion", "To User", and "To Subreddit".</p>
+        <p>The first item on the page was "Post from" in which the wording was confusing to me in the context of mail. The "Selecting a community" dropdown button indicated that this would be a community of one of the mods or "where" they are sending modmail from. Tapping on the button revealed a dropdown menu of all communities the user moderates. This dropdown menu relies on the device's system rather than RPL components since dropdown menus are not part of RPL for mobile as they take up much of the screen and offer a poorer UX.</p>
+        <p>Based on these observations, I changed the dropdown menu to a bottom sheet for a more mobile friendly layout and to maintain visibility of the main/background information. Additionally, some users are mods of many communities such that they would need to scroll extensively and the bottom sheet allows for a search bar as well.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center">
+        <img src="assets/img/reddit/modmail-sender.png" width="80%">
+        <p class="caption mt-4">fig. sender selection before and after</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>With the existing design, a mod was to "Post from" a specific community and the three choice types were "Moderator Discussion", "To User", and "To Subreddit". These 3 recipient choices existed as a radio button selection which indicated to me only one could be chosen. I perceived the radio button selection to take up too much real estate on the screen in addition to radio buttons not being part of RPL for mobile app. </p>
+        <p>To reduce cognitive overload, improve progressive disclosure, and mirror sender selection, I decided to move this selection into a bottom sheet. This offered mods a more focused flow and view as well as better understanding of what the next action to take is.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+        <img src="assets/img/reddit/modmail-0.png" width="80%">
+        <p class="caption mt-4">fig. recepient selection before and after</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
         <p>But what did a "Moderator Discussion" mean? Where would this go? Asking my mentor, this was a discussion post amongst the mods in the community selected in "Post from". While this functionality is offered, many mods opt for Slack or Discord to faciliate team discussions, likely because of the difficult experience in Modmail.</p>
-        <p>As for "To User" and "To Subreddit", selecting either of these options led to a input field to appear to type a specific community or username in. This was rather jarring in the change of the interface and required the user to be utmost precise with their inputted names, not offering suggestions while typing or search.</p>
-        <p>At the bottom, mods often forget to toggle "Hide my username" on. This allows mods to remain anonymous as the mod team and hides their indiviudal username, preventing harassment from upset community members, a common issue for mods.</p>
+        <p>I simplified this selection down to just "Moderators" such that the phrasing matched the other two recipients. To clarify what a "Moderators" means, I wrote and added a description underneath the selection. This location is typically where the value of the selection would go, breaking a design pattern in which I discussed and gained approval from the design systems team who supported due to the complexity of the interaction.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+        <img src="assets/img/reddit/modmail-1.png" width="80%">
+        <p class="caption mt-4">fig. Moderators Discussion selection before and after</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>As for "To User" and "To Subreddit", selecting either of these options led to a input field to appear to type a specific community or username in. This was a rather jarring change of the interface and required the user to be utmost precise with their inputted names, not offering suggestions while typing or search.</p>
+        <p>I changed "To User" to simply be "User" and made "To" the label for the dropdown. For "User", I placed the input field nested in the bottom sheet, again improving progressive disclore. Entering an exact username/community was P0 and the ability to search was P1, similar to Modlog.</p>
+        <p>Also when "To User is selected, the option to "Hide my username" appears at the bottom of the screen. This allows mods to remain anonymous as the mod team and hides their indiviudal username, preventing targeted harassment from upset community members, a common issue for mods. Due to the distance from the click that prompted the option, I learned mods often forget to check the box before sending modmail.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+        <img src="assets/img/reddit/modmail-touser.png" width="80%">
+        <p class="caption mt-4">fig. user recipient selection before and after</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>Also when "To User is selected, the option to "Hide my username" appears at the bottom of the screen. This allows mods to remain anonymous as the mod team and hides their indiviudal username, preventing targeted harassment from upset community members, a common issue for mods. Due to the distance from the click that prompted the option, I learned mods often forget to check the box before sending modmail.</p>
+        <p>Though this option is only associated with a user, I found it important for the mods to see this on the main page rather than nested in the bottom sheet as it offers system transparency and is highly important. Adding the label "As" with a toggle between "Mod team" and "u/username" directly underneath the "From" selections reduces the likelihood of overlooking the selection. Defaulting to "Mod team" solves the issue of forgetting to check the box. Mods rarely send as their own username, but when they do, it's important to know what account they are sending from since mods tend to have many accounts as well.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+        <img src="assets/img/reddit/modmail-hideuser.png" width="80%">
+        <p class="caption mt-4">fig. user recipient selection before and after</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>Mentioned previously, selecting "To Subreddit" opens an text field to enter an exact subreddit name. Subreddit names can be long and requiring an exact input fails to prevent user error with typing and spelling. Additionally, since this version of modmail was created, Reddit has moved away from using the term "subreddit" and replaced it with "community".</p>
+        <p>The nested bottom sheet in this case generates a list of all communities with the option to search. This decreases user error and also increases efficiency.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+        <img src="assets/img/reddit/modmail-subreddit.png" width="80%">
+        <p class="caption mt-4">fig. user recipient selection before and after</p>
       </div>
     </div>
 
@@ -350,7 +402,7 @@
 
     <div class="row">
       <div class="col-10 col-lg-8 offset-1">
-        <h4 class="reddit-txt bold">3 | design approach</h4>
+        <h4 class="reddit-txt bold">3 | prototype</h4>
         <p class="heading bold">prototying the filters</p>
         <p>observing the desktop ui</p>
         <p>and the existing mobile filters</p>
