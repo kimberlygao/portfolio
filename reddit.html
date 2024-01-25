@@ -307,6 +307,7 @@
         <p class="heading bold">product</p>
         <p>With the designs of the 3 filters missing on mobile, developing them to be released on the app will improve the parity gap between desktop and mobile. This is a feature mods have been asking about for a while since some mods only use the mobile app.</p>
         <p class="heading bold">personal</p>
+        <p>I accomplished this project in the first week of my internship as a simpler project to ease myself into the Reddit design world.</p>
         <p>Often creating my own design systems, this was my first time learning and utilizing a robust design system documentation with Figma components. In order for such a large product to remain consistent and cohesive, the design system needs to be clear, direct, and standardized with information design. I gained insight into what is necessary to accomplish such and how it affects creating prototypes and design opportunties.</p>
         <P>With this first project, building domain knowledge was the most important for making informed design decisions. It was valuable to me as someone who has never used mod tools, to be able to read discussions by mods about their issues and watch recorded contextual inquiries with mods of the largest communities.</P>
       </div>
@@ -396,27 +397,60 @@
         <img src="assets/img/reddit/modmail-subreddit.png" width="80%">
         <p class="caption mt-4">fig. user recipient selection before and after</p>
       </div>
-    </div>
-
-    <div class="row" style="height: 5vh"></div>
-
-    <div class="row">
-      <div class="col-10 col-lg-8 offset-1">
-        <h4 class="reddit-txt bold">3 | prototype</h4>
-        <p class="heading bold">prototying the filters</p>
-        <p>observing the desktop ui</p>
-        <p>and the existing mobile filters</p>
-        </ul>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>Another consideration I thought heavily about was the order in which to put the sender and recipient. "Post from" first makes sense since the community selected contextualizes the remaning message. Observing other mail client apps and the traditional envelope addressing, the design pattern is typically "To" then "From". </p>
+        <p>After testing both orders and considering ease of use, I decided to follow the design pattern of entering the recepient then sender.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+        <img src="assets/img/reddit/modmail-blank.png" width="80%">
+        <p class="caption mt-4">fig. sender/recipient selection before and after</p>
+      </div>
+      <div class="col-10 offset-1 pt-5">
+        <p class="heading bold">how to actually hit send</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1">
+        <p>The send button had the most possible placements and the least straightforward answer. Without thinking heavily, I initially placed "Send Message" at the bottom while I was focused on the selections above. But after going through the flow and prototyping a keyboard in, I realized a mod is most likely to want to hit send after typing out their message where the keyboard would cover or push the button up. Looking into other mail clients, most of them have their send button on the top right which I found to be inconvenient to reach for.</p>
+        <p>I turned towards and idea of a floating button that appeared when on the "Message" field since that was likely the location the user would be ready to send and offered an easy tap once they finished. I replaced the label with an arrow send icon as a standard representation of "send". This also helped minimize space. Additionally, the button remains disabled until all the required fields are fulfilled to prevent user error. Lastly, the floating button only when on the message minimizes the number of buttons on the screen such that the mod can focus more on their task at hand.</p>
+        <p>One argument against this floating button is if the mod goes back to the "Subject" field (i.e. to fix a typo), the button disappears. This might caught confusion for user as their ability to send disappears. Their next course of action is likely to double check their message typing for any typos such that they click back into the "Message" field and can hit send. Either way, to send would require one more tap and consulting other designers, we found it to be acceptable in this user journey.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center">
+        <img src="assets/img/reddit/modmail-send.png" width="80%">
+        <p class="caption mt-4">fig. Send Message before and after</p>
+      </div>
+      <div class="col-10 offset-1 pt-5">
+        <p class="heading bold">one last detail – formatting help</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1">
+        <p>The last major change was the "Formatting Help" that was previously available at the bottom of the screen. Clicking on the button would open a deprecated web page about commetting markdown on an in app browser. The long and extensive site was difficult to naviagate and had excess unneccesary information.</p>
+        <p>Pulling out the most important and likely to be used markdown notations, I put those inside a table that is now displayed in a full-screen bottom sheet for reference. Since markdown is only available for use in the "Message" field, the point of entry is now a floating button similar to the send button.</p>
+      </div>
+      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center">
+        <img src="assets/img/reddit/modmail-formatting.png" width="80%">
+        <p class="caption mt-4">fig. formatting reference before and after</p>
       </div>
     </div>
 
     <div class="row" style="height: 5vh"></div>
 
     <div class="row">
-      <div class="col-10 col-lg-8 offset-1">
-        <h4 class="reddit-txt bold">4 | outcomes</h4>
-        <p class="heading bold">a final prototype</p>
-        <p>insert gif and talk about it</p>
+      <div class="col-10 col-lg-10 offset-1">
+        <h4 class="reddit-txt bold">3 | prototype</h4>
+        <p class="heading bold">delivered flow of composing a new modmail message</p>
+        <div class="text-center">
+          <img src="assets/img/reddit/modmail-full.gif" style="padding: 10px; background-color: black; border-radius: 33px;" width="300vh">
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="height: 5vh"></div>
+
+    <div class="row">
+      <div class="col-10 col-lg-10 offset-1">
+        <h4 class="reddit-txt bold pb-4">4 | outcomes</h4>
+        <p class="heading bold">product</p>
+        <p>As this project was part of a larger update to the entire Modmail system, my designs shipped and went into development during the second half my internship. After reviewing, tweaking, and getting final approval of my work, I began to collaborate with product and engineering to continue progressing. This involved some back and forth communications with engineering to clarify intended behavior and add any additional requirements. I familiarized myself with empty states and error states which I had not created before. This was where we are allowed to be more creative and show more of the Reddit personality and tone. I collaborated with the content design team here as well to ensure I was following their guidelines. While I completed this designs for this project in about two weeks, I continued supporting it throughout my internship and am happy to share that it was released onto the app in November 2023. It was extremely exciting to see what I created on the official Reddit app.</p>
+        <p class="heading bold">personal</p>
+        <p>This was definitely my favorite project of the three I worked on during my summer. I learned I really enjoy thinking through interaction design problems and especially on mobile where the challenges are more complex despite a smaller screen. This was also my first time as a designer working with an engineer who built out my feature. Learning how to communicate effectively was a big part of my growth as it taught me what is important for me to provide such that there are less gaps for development. Overall, I am very proud of my work here and taking a complex interaction to a flow that is more usable and elegant for mods.</p>
         </ul>
       </div>
     </div>
