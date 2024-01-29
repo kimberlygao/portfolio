@@ -348,83 +348,83 @@
       <div class="col-10 offset-1 pt-5">
         <p class="heading bold">tackling the confusing sender/recipient selection</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1">
+      <div class="col-10 col-lg-4 offset-1">
         <p>The first item on the page was "Post from" in which the wording was confusing to me in the context of mail. The "Selecting a community" dropdown button indicated that this would be a community of one of the mods or "where" they are sending modmail from. Tapping on the button revealed a dropdown menu of all communities the user moderates. This dropdown menu relies on the device's system rather than RPL components since dropdown menus are not part of RPL for mobile as they take up much of the screen and offer a poorer UX.</p>
         <p>Based on these observations, I changed the dropdown menu to a bottom sheet for a more mobile friendly layout and to maintain visibility of the main/background information. Additionally, some users are mods of many communities such that they would need to scroll extensively and the bottom sheet allows for a search bar as well.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-start m-auto text-center align-items-center">
         <img src="assets/img/reddit/modmail-sender.png" width="80%">
         <p class="caption mt-4">fig. sender selection before and after</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1 pt-5">
+      <div class="col-10 col-lg-4 offset-1 pt-5">
         <p>With the existing design, a mod was to "Post from" a specific community and the three choice types were "Moderator Discussion", "To User", and "To Subreddit". These 3 recipient choices existed as a radio button selection which indicated to me only one could be chosen. I perceived the radio button selection to take up too much real estate on the screen in addition to radio buttons not being part of RPL for mobile app. </p>
         <p>To reduce cognitive overload, improve progressive disclosure, and mirror sender selection, I decided to move this selection into a bottom sheet. This offered mods a more focused flow and view as well as better understanding of what the next action to take is.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
         <img src="assets/img/reddit/modmail-0.png" width="80%">
         <p class="caption mt-4">fig. recepient selection before and after</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1 pt-5">
+      <div class="col-10 col-lg-4 offset-1 pt-5">
         <p>But what did a "Moderator Discussion" mean? Where would this go? Asking my mentor, this was a discussion post amongst the mods in the community selected in "Post from". While this functionality is offered, many mods opt for Slack or Discord to faciliate team discussions, likely because of the difficult experience in Modmail.</p>
         <p>I simplified this selection down to just "Moderators" such that the phrasing matched the other two recipients. To clarify what a "Moderators" means, I wrote and added a description underneath the selection. This location is typically where the value of the selection would go, breaking a design pattern in which I discussed and gained approval from the design systems team who supported due to the complexity of the interaction.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
         <img src="assets/img/reddit/modmail-1.png" width="80%">
         <p class="caption mt-4">fig. Moderators Discussion selection before and after</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1 pt-5">
+      <div class="col-10 col-lg-4 offset-1 pt-5">
         <p>As for "To User" and "To Subreddit", selecting either of these options led to a input field to appear to type a specific community or username in. This was a rather jarring change of the interface and required the user to be utmost precise with their inputted names, not offering suggestions while typing or search.</p>
         <p>I changed "To User" to simply be "User" and made "To" the label for the dropdown. For "User", I placed the input field nested in the bottom sheet, again improving progressive disclore. Entering an exact username/community was P0 and the ability to search was P1, similar to Modlog.</p>
         <p>Also when "To User is selected, the option to "Hide my username" appears at the bottom of the screen. This allows mods to remain anonymous as the mod team and hides their indiviudal username, preventing targeted harassment from upset community members, a common issue for mods. Due to the distance from the click that prompted the option, I learned mods often forget to check the box before sending modmail.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
         <img src="assets/img/reddit/modmail-touser.png" width="80%">
         <p class="caption mt-4">fig. user recipient selection before and after</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1 pt-5">
+      <div class="col-10 col-lg-4 offset-1 pt-5">
         <p>Also when "To User is selected, the option to "Hide my username" appears at the bottom of the screen. This allows mods to remain anonymous as the mod team and hides their indiviudal username, preventing targeted harassment from upset community members, a common issue for mods. Due to the distance from the click that prompted the option, I learned mods often forget to check the box before sending modmail.</p>
         <p>Though this option is only associated with a user, I found it important for the mods to see this on the main page rather than nested in the bottom sheet as it offers system transparency and is highly important. Adding the label "As" with a toggle between "Mod team" and "u/username" directly underneath the "From" selections reduces the likelihood of overlooking the selection. Defaulting to "Mod team" solves the issue of forgetting to check the box. Mods rarely send as their own username, but when they do, it's important to know what account they are sending from since mods tend to have many accounts as well.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
         <img src="assets/img/reddit/modmail-hideuser.png" width="80%">
         <p class="caption mt-4">fig. user recipient selection before and after</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1 pt-5">
+      <div class="col-10 col-lg-4 offset-1 pt-5">
         <p>Mentioned previously, selecting "To Subreddit" opens an text field to enter an exact subreddit name. Subreddit names can be long and requiring an exact input fails to prevent user error with typing and spelling. Additionally, since this version of modmail was created, Reddit has moved away from using the term "subreddit" and replaced it with "community".</p>
         <p>The nested bottom sheet in this case generates a list of all communities with the option to search. This decreases user error and also increases efficiency.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
         <img src="assets/img/reddit/modmail-subreddit.png" width="80%">
         <p class="caption mt-4">fig. user recipient selection before and after</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1 pt-5">
+      <div class="col-10 col-lg-4 offset-1 pt-5">
         <p>Another consideration I thought heavily about was the order in which to put the sender and recipient. "Post from" first makes sense since the community selected contextualizes the remaning message. Observing other mail client apps and the traditional envelope addressing, the design pattern is typically "To" then "From". </p>
         <p>After testing both orders and considering ease of use, I decided to follow the design pattern of entering the recepient then sender.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto text-center align-items-center pt-5">
         <img src="assets/img/reddit/modmail-blank.png" width="80%">
         <p class="caption mt-4">fig. sender/recipient selection before and after</p>
       </div>
       <div class="col-10 offset-1 pt-5">
         <p class="heading bold">how to actually hit send</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1">
+      <div class="col-10 col-lg-4 offset-1">
         <p>The send button had the most possible placements and the least straightforward answer. Without thinking heavily, I initially placed "Send Message" at the bottom while I was focused on the selections above. But after going through the flow and prototyping a keyboard in, I realized a mod is most likely to want to hit send after typing out their message where the keyboard would cover or push the button up. Looking into other mail clients, most of them have their send button on the top right which I found to be inconvenient to reach for.</p>
         <p>I turned towards and idea of a floating button that appeared when on the "Message" field since that was likely the location the user would be ready to send and offered an easy tap once they finished. I replaced the label with an arrow send icon as a standard representation of "send". This also helped minimize space. Additionally, the button remains disabled until all the required fields are fulfilled to prevent user error. Lastly, the floating button only when on the message minimizes the number of buttons on the screen such that the mod can focus more on their task at hand.</p>
         <p>One argument against this floating button is if the mod goes back to the "Subject" field (i.e. to fix a typo), the button disappears. This might caught confusion for user as their ability to send disappears. Their next course of action is likely to double check their message typing for any typos such that they click back into the "Message" field and can hit send. Either way, to send would require one more tap and consulting other designers, we found it to be acceptable in this user journey.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto text-center align-items-center">
         <img src="assets/img/reddit/modmail-send.png" width="80%">
         <p class="caption mt-4">fig. Send Message before and after</p>
       </div>
       <div class="col-10 offset-1 pt-5">
         <p class="heading bold">one last detail – formatting help</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1">
+      <div class="col-10 col-lg-4 offset-1">
         <p>The last major change was the "Formatting Help" that was previously available at the bottom of the screen. Clicking on the button would open a deprecated web page about commetting markdown on an in app browser. The long and extensive site was difficult to naviagate and had excess unneccesary information.</p>
         <p>Pulling out the most important and likely to be used markdown notations, I put those inside a table that is now displayed in a full-screen bottom sheet for reference. Since markdown is only available for use in the "Message" field, the point of entry is now a floating button similar to the send button.</p>
       </div>
-      <div class="col-10 col-lg-4 d-flex flex-column justify-content-center m-auto text-center align-items-center">
+      <div class="col-10 col-lg-6 d-flex flex-column justify-content-center m-auto text-center align-items-center">
         <img src="assets/img/reddit/modmail-formatting.png" width="80%">
         <p class="caption mt-4">fig. formatting reference before and after</p>
       </div>
@@ -455,7 +455,249 @@
       </div>
     </div>
 
+    <div class="row" style="height: 10vh"></div>
+
+    <div class="row">
+      <div class="col-10 offset-1">
+        <h2 class="reddit-txt bold">POST DETAILS PAGE INLINE MODERATION</h2>
+      </div>
+    </div>
+
     <div class="row" style="height: 5vh"></div>
+
+    <div class="row">
+      <div class="col-10 col-lg-5 offset-1">
+        <h4 class="reddit-txt bold">1 | background</h4>
+        <p class="heading bold">how can one page have so much going on</p>
+        <p>The Post Details Page (PDP) is the surface containing an individual post and all of its comments and threads. This is essentially where all the content lives and therefore where many users find themselves scrolling.</p>
+        <p>This project is my exploratory work on potential improvements to the PDP page from a moderation perspective.</p>
+      </div>
+      <div class="col-10 col-lg-5 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center">
+        <img src="assets/img/reddit/pdp-1.png" width="90%">
+        <p class="caption mt-4">fig. pdp for user (left) vs mod (right)</p>
+      </div>
+      <div class="col-10 col-lg-3 offset-1 pt-5">
+        <p>PDP Inline Moderation refers to all of the moderation actions that are available on the PDP and provides mods with the ability to maintain their community at the heart of their content.
+        <p>Here specifically, by tapping on the checks and flags can view reported & flagged items and see the mod action history.</p>
+        </div>
+      <div class="col-10 col-lg-7 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-2.png" width="93%">
+        <p class="caption mt-4">fig. viewing report & action history of comments (left) + post (right)</p>
+      </div>
+      <div class="col-10 col-lg-3 offset-1 pt-5">
+        <p>Mods access actions through the overflow menu for a comment or the mod menu for a post. </p>
+        <p>For a comment, the overflow opens a bottom sheet with mod actions listed on top followed by viewer actions below. As for a post, only mod actions are shown on the overlay where viewer actions live in the overflow menu for the post.</p>
+        <p>These menus offer different actions based on the type but also appear stylistically different since the post mod menu has not been updated to the new design system.</p>
+      </div>
+      <div class="col-10 col-lg-7 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-3.png" width="93%">
+        <p class="caption mt-4">fig. mod actions on comments (left) + post (right)</p>
+      </div>
+      <div class="col-10 col-lg-5 offset-1 pt-5">
+        <p>The PDP also offers a feature called mod mode. Users can turn on mod mode through the button highlighted on the top right of the screen. The filled mod shield indicates mod mode is on. </p>
+        <p>Activating mod mode surfaces mod items relevant to mods on the page. For a post, all report information is listed out below the post with a yellow background.
+        </div>
+      <div class="col-10 col-lg-5 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-4.png" width="90%">
+        <p class="caption mt-4">fig. mod mode off (left) vs on (right)</p>
+      </div>
+      <div class="col-10 col-lg-5 offset-1 pt-5">
+        <p>In addition to report information shown, mod mode also takes important actions – approve, remove, remove as spam, select post flair – and places them directly below the content for easier and quicker access.</p>
+        <p>Created a long time before I joined, mod mode was aimed to show/hide a level a visibility to mods such that they can have a simplified viewer experience when mod mode is off and focus on moderation when mod mode is on.</p>
+        </div>
+      <div class="col-10 col-lg-5 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-5.png" width="90%">
+        <p class="caption mt-4">fig. actions in mod mode off (left) vs on (right)</p>
+      </div>
+    </div>
+
+    <div class="row" style="height: 5vh"></div>
+
+    <div class="row">
+      <div class="col-10 offset-1 pb-4">
+        <h4 class="reddit-txt bold">2 | design process</h4>
+      </div>
+      <div class="col-10 col-lg-4 offset-1">
+        <p class="heading bold">what to do with such a large canvas <br> (research + ideation)</p>
+        <p>As this project is all exploratory work, I was pretty overwhelmed with all the directions and opportunities. And since I was a fresh pair of eyes on the team, the designers wanted to see what I could generate on my own without their input and influence. This led me to do a TON of research to determine more specific pain points to address.</p>
+        <p>With no specific problem or goal at hand, I first aimed to set one – find a problem and determine potential goals for the project. I did this by watching recorded Mod Shadow sessions (contextual inquiry with mods of different communities) where individuals are asked to share screen and think aloud through their modding process. I watched about 3 of these hour long sessions, noting observations and especially similarities across different mods.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center">
+        <img src="assets/img/reddit/pdp-6.png" width="100%">
+        <p class="caption mt-4">fig. mod shadow session notes</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>I also spent time reading posts in mod focused communities as secondary research. Looking specifically at their complaints and discussions about pain points.</p>
+        <p>Based on all the research I gathered, I created an objective with a problem, goals, and context as a snapshot basis for moving forward.</p>
+        <p>Throughout the project I then asked, "How might we prioritize efficiency, accuracy & consistency for inline moderation tools in PDP?" such that we might streamline actions with the mod queue, improve comment thread management, optimize mobile specific behaviors, etc.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-7.png" width="100%">
+        <p class="caption mt-4">fig. project objective snapshot</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>Alongside my research and with a problems statement, I focused on getting ALL potential ideas out there. This was challenging in the sense that I was thinking feasibly in the beginning and limiting myself to plausible, simple ideas.</p>
+        <p>These ideas were very targeted at specific pain points from my research and I felt like I was failing to think higher level beyond "obvious" solutions. For example, lots of mods set up macros in their phone keyboards to use so create a feature to allow that in the reddit app instead.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-8.png" width="100%">
+        <p class="caption mt-4">fig. early ideas</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>I turned towards the two designers on me team for a brainstorming session to help challenge me. I led a crazy 8's brainstorming session to get ideas flowing from one another and to get more inspiration given their much wider domain knowledge.</p>
+        <p>We discussed our ideas and I summarized the ones I found interesting to explore:</p>
+        <ul>
+          <li>cleaning up comments from posts that are already removed, showing posts from banned user in mod queue -> removing all content froma user given a time frame (ex: troll in community with a ton of hate comments)</li>
+          <li>recent actions in a community</li>
+          <li>automod / comment guidance per post (ex: game days have different post rules which cannot be scoped and enforced to just one post)</li>
+          <li>panels -> open a single comment thread as a panel to see one parent + all children in a deep thread</li>
+          <li>"kill mod mode" – toggle doesn't always work, how else can we let mods take a break from moderating</li>
+          <li>abstractly predicting intentions of a user (good vs problematic)</li>
+        </ul>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-9.png" width="100%">
+        <p class="caption mt-4">fig. crazy 8's brainstorm</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>Between my own ideas and our brainstorm session, I narrowed to 6 concrete ideas to sketch and flesh out visually.</p>
+        <ol>
+          <li>comment guidance</li>
+          <li>sticky any user's comment</li>
+          <li>mod-only comment thread on a post as a discussion space for mods</li>
+          <li>user profile card for easy quick insight</li>
+          <li>comment thread panel for navigation</li>
+          <li>fix mod mode</li>
+        </ol>
+        <p>After sharing and receiving validation on these ideas during design studio, I started to turn them into more robust concepts and deeper considerations.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-10.png" width="100%">
+        <p class="caption mt-4">fig. sketches of 6 ideas</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>For each idea, I thought heavily about why should this feature be created, digging deep into the purpose. Asking "why" 5 times, considering user stories, current existing solutions, it was important for me to be able to back these ideas with concrete arguments and evidence demonstrating a purpose and need</p>
+        <p>It was helpful to get feedback through questions being asked and holes being poked to understand where I needed to improve on conveying and justifying ideas.</p>
+        <p>Looking back, I would have also liked to work with product to get user data and insights for quantitative reasoning but I wasn't aware that was available to me at the time.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-11.png" width="100%">
+        <p class="caption mt-4">fig. running notes / dump of 6 ideas</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>At this point, with 6 ideas, I wasn't sure which to continue pursing but I definitely wouldn't do all of them. My mentor guided me by doing a quick prioritization matrix of impact vs effort.</p>
+        <p>The matrix showed user panel and mod only discussion to be the two ideas that should be prioritized first. Discussing the user panel more, we decided against it since it wasn't a necessarily new idea and needed improvement as it's accessed from several surfaces. Instead, mod-only discussions was more true to the PDP context of my project and a new concept to tackle of a long standing problem.</p>
+        <p>Mod mode was also an area interesting to me which I felt would highly benefit from exploratory work given its complexity and dated design.</p>
+        <p>Moving forward, I focused on exploring three core ideas:</p>
+        <ol>
+          <li>mod-only discussion</li>
+          <li>comment thread context panel</li>
+          <li>updating mod mode</li>
+        </ol>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-12.png" width="100%">
+        <p class="caption mt-4">fig. prioritization matrix of 6 ideas</p>
+      </div>
+
+      <div class="col-10 offset-1 pt-5">
+        <p class="heading bold">trying to navigate and mod through comment threads</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1">
+        <p>Before jumping into Figma, I spent time sketching and thinking through more details of this panel. I considered what possible actions mods would likely take and then mapped them out to where they might best go on the screen for both mobile and desktop. I also noted questions I had for myself for different cases like what to do with new comments? How many levels deep should be shown?</p>
+        <p>For mobile, I decided the entry point to be a long press on the comment to open a focused bottom sheet.</p>
+        <p>For desktop, an expand button on the comment to open a side panel was the simplest point of entry. The design team was looking for ways to utilize side panel real estate to supply mods with more information and to accomplish tasks.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center">
+        <img src="assets/img/reddit/pdp-13.png" width="100%">
+        <p class="caption mt-4">fig. comment thread panel sketches</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>I then took these sketches and created initial frames in Figma. At this point, I was trying to generate as many variations as I could for the interaction.</p>
+        <p>Since comment nesting has a pre-defined pattern, my tasks was a matter of providing navigation between the comments. I added variations of jumping to the parent or root of the comment. I also considered whether the parent comment should be shown or not upon opening the comment thread panel.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-14.png" width="100%">
+        <p class="caption mt-4">fig. half-sheet comment thread panel variations</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>Considering that a bottom sheet provides half the screen space and there is no need to see the background of the same content, I opted to make the panel into full screen and continued adjusting the controls.</p>
+        <p>I eventually progressed on my iterations from left to right, realizing I didn't need to have a title that was default to the component. The navigation buttons made the most sense aligned top left away from bulk controls pinned to the bottom.</p>
+        <p>Jumping to parent and root were given labels to help distinguish between the single and double up arrow while going left and right to children didn't need the labels since familiarity would grow with discovery.</p>
+        <p>Another important consideration was bulk actions as in approving/removing multiple comments at once. "Nuking" is available through third party clients as well as Toolbox (add def here) but not provided natively as a Reddit feature. There was pushback on it previously but through discussion with my design team, they felt product would benefit from exploratory work here again.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-15.png" width="100%">
+        <p class="caption mt-4">fig. full sheet comment thread panel iterations (left to right)</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+          <p>With the full sheets, I also started considering sibling comments and jumping to those threads as well. Given the "tree" hierarchy of comments, it was challenging to determine relative locations of comments to the user and how to best position and display them.</p>
+          <p>Given that parent, root and children run vertically, I decided to place jumping to siblings with a horizontal sliding animation to help convey that one was essentially moving "sideways" across the comments.</p>
+        </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-16.png" width="100%">
+        <p class="caption mt-4">fig. jumping between sibling comments</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p>From here, I created my first prototype starting from the PDP and going through all the jumping navigations, ending with a bulk remove.</p>
+        <p>After my first round of prototyping, I shared my explorations with r/RedditModCouncil, a private subreddit with ~400 mods to participate in communicating with Reddit admins for feature feedback, primary research, and other design/research needs. </p>
+        <p>For comment threading, I set the motivations, explained the prototype, and then asked mods "What actions are you interested in taking here? What else would you like to see here?". I received the following feedback:</p>
+        <ul>
+          <li>I like the easy movement to the parent comment maintaing the report text. Very often I try to go into context of a slap fight between two or more users and I need to do a lot of scrolling to find the source to take mod actions. On mobile this is a challenge.</li>
+          <li>The comment navigator is awesome. Maybe 'expand all reports' to see how many report children comments that thread has.</li>
+        </ul>
+        <p>I also shared this prototype in design studio review where I was questioned on my proposed solution to navigating comment threads. I was challenged to think outside of a bottom sheet solution to see what I could further generate as this would take much engineering efforts and build outside the PDP rather than improve upon.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/CommentThread_Jul24.gif" style="padding: 10px; background-color: black; border-radius: 30px;" width="300vh">
+        <p class="caption mt-4">fig. first prototype of comment thread panel (captioned on top)</p>
+      </div>
+      <div class="col-10 col-lg-10 offset-1 pt-5">
+        <p>Based on my studio feedback, I veered away from continuing to develop a comment thread bottom sheet and explore other solutions to this problem. I turned towards my original research and pain points I identified.</p>
+        <p>mod quotes from various threads</p>
+        <ul>
+          <li>Trying to see the context of a comment on the app rarely words if the comment is nested too deep in the thread. That's the biggest downside for modding on the app for me.</li>
+          <li>What about navigating up and down comment threads? Like if the comment in the video was a reply to comething, we need to be able to go back up to that parent comments. And then down to its replies. This used ot be semi-possible on mobile, but they removed it for some reason. The only alternative is so load all the comments and find the thread from the top down. If it's a very large post that is way too much work.</li>
+          <li>Navigating through comment chains like through parent comments is really tedius on the official app.</li>
+          <li>If the comment needs context, the experience is abysmal, especially if the comment is hiding in a post with hundreds of comments somewhere deep in a chain with little upvotes.</li>
+        </ul>
+
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>With the context panel being a large feature, I aimed for smaller, more integrated solutions. As navigations, I tried adding the jump to buttons in existing menus and functionalities. </p>
+        <p>I t</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-17.png" width="80%">
+        <p class="caption mt-4">fig. first prototype of comment thread panel (captioned on top)</p>
+      </div>
+
+
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p class="heading bold">creating a new space for mods to discuss</p>
+        <p></p>
+      </div>
+
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p class="heading bold">okay what is mod mode really providing</p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="row" style="height: 5vh"></div>
+
+
+    <div class="row">
+      <div class="col-10 offset-1 pb-4">
+        <h4 class="reddit-txt bold">2 | prototypes</h4>
+      </div>
+      <div class="col-10 col-lg-4 offset-1">
+        <p class="heading bold">rahhhhhhhhhhh</p>
+      </div>
+      </div>
+    </div>
+
+    
 
 
 
