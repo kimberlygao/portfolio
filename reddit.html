@@ -601,6 +601,7 @@
       </div>
 
       <div class="col-10 offset-1 pt-5">
+        <p class="heading bold reddit-txt">core idea #1</p>
         <p class="heading bold">trying to navigate and mod through comment threads</p>
       </div>
       <div class="col-10 col-lg-4 offset-1">
@@ -638,7 +639,7 @@
         <img src="assets/img/reddit/pdp-16.png" width="100%">
         <p class="caption mt-4">fig. jumping between sibling comments</p>
       </div>
-      <div class="col-10 col-lg-4 offset-1 pt-5">
+      <div class="col-10 col-lg-6 offset-1 pt-5">
         <p>From here, I created my first prototype starting from the PDP and going through all the jumping navigations, ending with a bulk remove.</p>
         <p>After my first round of prototyping, I shared my explorations with r/RedditModCouncil, a private subreddit with ~400 mods to participate in communicating with Reddit admins for feature feedback, primary research, and other design/research needs. </p>
         <p>For comment threading, I set the motivations, explained the prototype, and then asked mods "What actions are you interested in taking here? What else would you like to see here?". I received the following feedback:</p>
@@ -648,11 +649,12 @@
         </ul>
         <p>I also shared this prototype in design studio review where I was questioned on my proposed solution to navigating comment threads. I was challenged to think outside of a bottom sheet solution to see what I could further generate as this would take much engineering efforts and build outside the PDP rather than improve upon.</p>
       </div>
-      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+      <div class="col-10 col-lg-4 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
         <img src="assets/img/reddit/CommentThread_Jul24.gif" style="padding: 10px; background-color: black; border-radius: 30px;" width="300vh">
-        <p class="caption mt-4">fig. first prototype of comment thread panel (captioned on top)</p>
+        <p class="caption mt-4">fig. 1st prototype (captions on top)</p>
       </div>
       <div class="col-10 col-lg-10 offset-1 pt-5">
+        <p class="heading bold">back to the comments drawing board</p>
         <p>Based on my studio feedback, I veered away from continuing to develop a comment thread bottom sheet and explore other solutions to this problem. I turned towards my original research and pain points I identified.</p>
         <p>mod quotes from various threads</p>
         <ul>
@@ -664,21 +666,117 @@
 
       </div>
       <div class="col-10 col-lg-6 offset-1 pt-5">
-        <p>With the context panel being a large feature, I aimed for smaller, more integrated solutions. As navigations, I tried adding the jump to buttons in existing menus and functionalities. </p>
-        <p>I t</p>
+        <p>With the context panel being a large feature, I aimed for smaller, more integrated solutions. As navigation, I tried adding the jump to buttons in existing menus and functionalities. </p>
+        <p>Here was a first mockup of putting these buttons into the mod menu for a comment. The functions by allowing to just jump up or horizontally, then needing to scroll back down. Much of this functionality is aimed at going back up in tackling the same context issue mentioned above.</p>
       </div>
       <div class="col-10 col-lg-4 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
         <img src="assets/img/reddit/pdp-17.png" width="80%">
-        <p class="caption mt-4">fig. first prototype of comment thread panel (captioned on top)</p>
+        <p class="caption mt-4">fig. mockup of comment nav in mod menu</p>
+      </div>
+      <div class="col-10 col-lg-3 offset-1 pt-5">
+        <p>My second idea here uses the down arrow floating action button (FAB) that lives on the bottom right of the PDP. Tapping on this button will jump to next root comment. Holding down on the button allows you to move and place the button anywhere.</p>
+        <p>This idea expands on an already existing navigation, proposing that the long press opens an additional menu of navigation actions.</p>
+        <p>An issue here is how to determine what comment a mod is currently looking at, since multiple comments appear on the page together.</p>
+      </div>
+      <div class="col-10 col-lg-7 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-18.png" width="100%">
+        <p class="caption mt-4">fig. mockups of comment nav in FAB</p>
+      </div>
+
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p class="heading bold">now we have integrated comment navigation</p>
+        <p>To solve the previous issue of determining where the comment is, I simplified this interaction in only offering jumping to the root of the comment. Another way to acheive this is to hold down on the comment to collapse the entire thread from the root and then reopen that thread. This interaction is not intuitive to acheive the same result and the movement on screen is quite jerky. Later in another focus of this project, I also propose a new iteraction for long pressing on a comment such that there is a trade off of entry points as well.</p>
+        <p>To this menu, I also included jumping to the next reported item in the PDP such that mods can quickly move to the next item that needs immediate attention. This is especially useful in threads where a lot of content has been reported and it's easier to scroll through the PDP rather than relying on the mod queue.</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-19.png" width="70%">
+        <p class="caption mt-4">fig. final mockup of jump interaction</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 pt-5">
+        <p class="heading bold">oh comment prioritization too!</p>
+        <p>Building upon wanting to be able to easily see reported content in the PDP, I drafted up an additional way to sort the comments – by "Needs Review". This would surface every reported comment to the top, maintaining its root and direct parent of the comment, collapsing all others. Comments with the most reports will be shown first and followed by which were reported earliest (decreasing order and chronologically).</p>
+        <p>The need for this was highlighted heavily during a contextual inquiry shadow I conducted with a mod of r/BachelorNation. While a new episode airs every Monday, the mod will watch and mod the live discussion thread on mobile in which I observed and asked questions. Because all of this modding occurs in one place, it would be useful to resurface reported content every so often through sort as she would sort by "New" regularly to see fresh content. Switching between the two would offer greater coverage in finding inappropriate content to the community.</p>
+        <p>This additional sort method builds upon the current offerings of the PDP in which all the components are already built and would only need an additional sorting algorithm to complete.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 offset-lg-0 d-flex flex-column justify-content-center align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-20.png" width="100%">
+        <p class="caption mt-4">fig. sort by need review flow</p>
+      </div>
+      <div class="col-10 col-lg-10 offset-1 pt-5">
+        <p class="heading bold">bulk actions are back</p>
+        <p>Discussing bulk actions previously, I added approving/removing all comments in the thread of a selected comment. This is integrated now with the mod menu for a comment and can be used in conjoin with sorting by "Needs Review" for greater efficiency.</p>
+      </div>
+      <div class="col-10 col-lg-10 offset-1 d-flex flex-column justify-content-center align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-21.png" width="100%">
+        <p class="caption mt-4">fig. flow of bulk remove from mod menu</p>
+      </div>
+      <div class="col-10 col-lg-10 offset-1 pt-5">
+        <p class="heading bold">to summarize</p>
+        <p>These 3 broken down features (jump to root or next reported + sorting by "Needs Review" + bulk remove) accomplish similar tasks to the comment thread panel but within existing features on the PDP as potential alternative route. Given more time, I would be curious to A/B test these ideas to better understand their value and conjoined usability.</p>
       </div>
 
 
-      <div class="col-10 col-lg-4 offset-1 pt-5">
-        <p class="heading bold">creating a new space for mods to discuss</p>
-        <p></p>
+
+      <div class="col-10 col-lg-10 offset-1 pt-5">
+        <p class="heading bold reddit-txt">core idea #2</p>
+        <p class="heading bold">creating space for mods to discuss</p>
+        <p>The main motivation here is from mod teams using Slack or Discord to talk about content they are unsure about. This requires a mod to copy a link, go to an external app, start a discussion there, keep tabs externally, and then finally return to Reddit to finally take action. Responders to the discussion have first look at the conversation and then go to Reddit to understand the content and then back to the external app. Though this doesn't sound terrible for one discussion, extending this to 1000 problematic comments then becomes very tedious.</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>The main motivation here is from mod teams using Slack or Discord to talk about content they are unsure about. This requires a mod to copy a link, go to an external app, start a discussion there, keep tabs externally, and then finally return to Reddit to finally take action. Responders to the discussion have first look at the conversation and then go to Reddit to understand the content and then back to the external app. Though this doesn't sound terrible for one discussion, extending this to 1000 problematic comments then becomes very tedious.</p>
+        <p>I sketched the interaction out a little more, determining the entry point is a menu item in a mod actions list (potentially mod queue or PDP) and this expands to side panel (desktop) or bottom sheet (mobile) with a UI potentially similar to modmail.</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-22.png" width="80%">
+        <p class="caption mt-4">fig. mod only comments sketch</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>From sketching to my first prototype, the mod only comment thread turned into a mod only discussion to help distinguish from user comments and show a greater need for attention from mods.</p>
+        <p>My first prototype flows as follows:</p>
+        <ol>
+          <li>on a post, opens mod menu</li>
+          <li>starts a discussion, sending the first message</li>
+          <li>closes the discussion and waits for responses</li>
+          <li>checks back when two responses have been added</li>
+          <li>closes discussion</li>
+        </ol>
+        <p>This prototype translated the idea from sketches to frames effectively such that I could continue iterating and building upon it.</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <div class="text-center">
+          <img src="assets/img/reddit/ModDiscussionV1.gif" style="padding: 10px; background-color: black; border-radius: 33px;" width="300vh">
+        </div>
+        <p class="caption mt-4">fig. mod discussion first prototype</p>
+      </div>
+      <div class="col-10 col-lg-3 offset-1 pt-5">
+        <p>With the basic functionality outlined, I began considering the next action a mod would take. After reading the responses, they are likely to approve/remove the content. Thus, these actions should be easily accessible.</p>
+        <p>I tried different variations of the placement of the approve/remove buttons to find the most intuitive placement. I then evaluated them.</p>
+        <ul>
+          <li>top left: location seems related to messaging, mod shield might not communicate the actions available</li>
+          <li>top right: not sure what I am confirming or denying, not always available (only when not focused on input field)</li>
+          <li>bottom left: not an existing pattern, feels weird, vertical FAB is not in design systems</li>
+          <li>bottom right: weird placement far from main action, doesn't look clickable</li>
+        </ul>
+      </div>
+      <div class="col-10 col-lg-7 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <img src="assets/img/reddit/pdp-23.png" width="90%">
+        <p class="caption mt-4">fig. approve/remove in mod discussion variations</p>
+      </div>
+      <div class="col-10 col-lg-6 offset-1 pt-5">
+        <p>Based on the options generated, top left remained the most viable given its similarity to modmail's UI with actions on left and is also following existing patterns of actions on the left in other messaging platforms (ex: iMessage).</p>
+        <p>I created a second iteration prototype, incorporating removing the post.</p>
+        <p>Actions to approve or remove are only available after responses from other mods have been sent, not when the first message is sent. The mod approving/removing the post also updates the recent action bar as such and closes the discussion.</p>
+      </div>
+      <div class="col-10 col-lg-4 offset-1 offset-lg-0 d-flex flex-column justify-content-start align-items-center pt-5">
+        <div class="text-center">
+          <img src="assets/img/reddit/ModDiscussion_Jul24.gif" style="padding: 10px; background-color: black; border-radius: 33px;" width="300vh">
+        </div>
+        <p class="caption mt-4">fig. mod discussion prototype with removal</p>
       </div>
 
-      <div class="col-10 col-lg-4 offset-1 pt-5">
+
+
+      <div class="col-10 col-lg-10 offset-1 pt-5">
         <p class="heading bold">okay what is mod mode really providing</p>
         <p></p>
       </div>
